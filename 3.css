@@ -1,0 +1,20 @@
+/**
+ * Данный способ нельзя назвать универсальным, ведь кроме старых браузеров, он не работает также и в последнем Firefox.
+ */
+tbody tr:hover {
+    background: #fcf8e3;
+}
+td:hover {
+    background: #fbeed5;
+}
+td:hover::after {
+    background: #fcf8e3;
+    content: ' ';
+    display: block;
+    height: 5000px;
+    left: 0;
+    position: absolute;
+    top: -2500px;
+    width: 100%;
+    z-index: -1;
+}
