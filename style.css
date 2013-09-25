@@ -6,42 +6,58 @@ body{
     border-collapse: collapse;
     text-align: left;
     overflow: hidden;
-    z-index: 1;
+    position: relative;
     }
     .airpanel th,
     .airpanel td{
+        padding: 0;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+        }
+    .airpanel th div,
+    .airpanel td div{
         padding: 5px;
         height: 40px;
         position: relative;
+        z-index: 2; /* Содержимое ячейки выше всех */
         }
-    .airpanel th{
-        font-size: 9pt;
+    .airpanel tr:nth-child(2n) div{
+        background: #F0F0F0;
+        background: rgba(240, 240, 240, 0.5); /* Для наложение на фон hover колонки */
         }
-    .airpanel tr:nth-child(2n-1) td{
-        background: rgba(240, 240, 240, 0.5);
-        }
-    .airpanel tr td:nth-child(2n){
+    .airpanel tr td:nth-child(2n) div{
+        background: #EBEBEB;
         background: rgba(235, 235, 235, 0.5);
         }
-    .airpanel tr:nth-child(2n-1) td:nth-child(2n){
-        background: rgba(195, 197, 217, 0.49);
+    .airpanel tr:nth-child(2n) td:nth-child(2n){
+        background: #C3C5D9;
+        background: rgba(195, 197, 217, 0.5);
         }
+
     /* hover строки и ячейки */
-    .airpanel tr:hover td:nth-child(n){
-            background: #dc8bfc;
-            }
-        .airpanel tr:hover td:hover{
-            background: #8d00f0;
-            }
+    .airpanel tr td:hover{
+        z-index: 0; /* hover ячейка ниже всех остальных ячеек */
+        }
+    .airpanel tr:hover td div{
+        background: #dc8bfc;
+        }
     /* hover колонки - под колонкой рисуем цветную область */
-    .airpanel th:hover:after,
-    .airpanel td:hover:after{
+    .airpanel th:hover div:before,
+    .airpanel td:hover div:before,
+    .airpanel td:hover div:after{
         content: '';
         position: absolute;
-        z-index: -1;
-        background: #dc8bfc;
+        z-index: -2;
+        background: #e88cfa;
         width: 100%;
-        height: 20000px;
-        top: -10000px;
+        height: 4000px;
+        top: -2000px;
         left: 0;
         }
+    .airpanel td:hover div:after{
+        z-index: -1;
+        background: #8d00f0;
+        height: 100%;
+        top: 0;
+    }
