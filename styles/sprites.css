@@ -1,0 +1,87 @@
+.logo
+{
+    background: url("../images/logos.png") no-repeat;
+    height: 45px;
+    width: 126px;
+    display: inline-block
+}
+
+.logo-s7
+{
+    background-position: 0 0
+}
+
+.logo-austrian
+{
+    background-position: 0 -45px
+}
+
+.logo-british
+{
+    background-position: 0 -90px
+}
+
+.logo-iberia
+{
+    background-position: 0 -135px
+}
+
+.logo-lufthansa
+{
+    background-position: 0 -180px
+}
+
+.logo-transaero
+{
+    background-position: 0 -225px
+}
+
+.logo-rusline
+{
+    background-position: 0 -270px
+}
+
+.logo-uralairlines
+{
+    background-position: 0 -315px
+}
+
+tr:hover .logo-s7
+{
+    background-position: -126px 0
+}
+
+tr:hover .logo-austrian
+{
+    background-position: -126px -45px
+}
+
+tr:hover .logo-british
+{
+    background-position: -126px -90px
+}
+
+tr:hover .logo-iberia
+{
+    background-position: -126px -135px
+}
+
+tr:hover .logo-lufthansa
+{
+    background-position: -126px -180px
+}
+
+tr:hover .logo-transaero
+{
+    background-position: -126px -225px
+}
+
+tr:hover .logo-rusline
+{
+    background-position: -126px -270px
+}
+
+tr:hover .logo-uralairlines
+{
+    background-position: -126px -315px
+}
