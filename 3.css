@@ -15,7 +15,7 @@ td:hover
 td:hover::after
 {
     background: #fcf8e3;
-    content: ' ';
+    content: '';
     display: block;
     height: 5000px;
     left: 0;
