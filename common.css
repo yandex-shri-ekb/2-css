@@ -1,24 +1,36 @@
-body {
+body
+{
     font: 100% 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
-table {
+
+table
+{
     border-collapse: collapse;
     margin: 0 auto;
     overflow: hidden;
     width: 900px;
 }
-thead {
+
+thead
+{
     border-bottom: 2px solid #f2dede;
 }
-td, th {
+
+td,
+th
+{
     border-bottom: 1px solid #f2dede;
     padding: 8px;
     position: relative;
 }
-.logo {
+
+.logo
+{
     border-bottom: 1px dotted #000;
 }
-.logo:hover::after {
+
+.logo:hover::after
+{
     background: #fff url(logos.png);
     content: '';
     display: block;
@@ -29,21 +41,93 @@ td, th {
     width: 150px;
     z-index: 100;
 }
-.logo.aegean::after { background-position: 0 0; }
-.logo.airberlin::after { background-position: 0 -50px; }
-.logo.austrian::after { background-position: 0 -100px; }
-.logo.british::after { background-position: 0 -150px; }
-.logo.cathaypacific::after { background-position: 0 -200px; }
-.logo.emirates::after { background-position: 0 -250px; }
-.logo.etihad::after { background-position: 0 -300px; }
-.logo.globus::after { background-position: 0 -350px; }
-.logo.izhavia::after { background-position: 0 -400px; }
-.logo.lufthansa::after { background-position: 0 -450px; }
-.logo.polet::after { background-position: 0 -500px; }
-.logo.royaljordanian::after { background-position: 0 -550px; }
-.logo.s7::after { background-position: 0 -600px; }
-.logo.saravia::after { background-position: 0 -650px; }
-.logo.swiss::after { background-position: 0 -700px; }
-.logo.tajikair::after { background-position: 0 -750px; }
-.logo.transaero::after { background-position: 0 -800px; }
-.logo.uralairlines::after { background-position: 0 -850px; }
+
+.logo.aegean::after
+{
+    background-position: 0 0;
+}
+
+.logo.airberlin::after
+{
+    background-position: 0 -50px;
+}
+
+.logo.austrian::after
+{
+    background-position: 0 -100px;
+}
+
+.logo.british::after
+{
+    background-position: 0 -150px;
+}
+
+.logo.cathaypacific::after
+{
+    background-position: 0 -200px;
+}
+
+.logo.emirates::after
+{
+    background-position: 0 -250px;
+}
+
+.logo.etihad::after
+{
+    background-position: 0 -300px;
+}
+
+.logo.globus::after
+{
+    background-position: 0 -350px;
+}
+
+.logo.izhavia::after
+{
+    background-position: 0 -400px;
+}
+
+.logo.lufthansa::after
+{
+    background-position: 0 -450px;
+}
+
+.logo.polet::after
+{
+    background-position: 0 -500px;
+}
+
+.logo.royaljordanian::after
+{
+    background-position: 0 -550px;
+}
+
+.logo.s7::after
+{
+    background-position: 0 -600px;
+}
+
+.logo.saravia::after
+{
+    background-position: 0 -650px;
+}
+
+.logo.swiss::after
+{
+    background-position: 0 -700px;
+}
+
+.logo.tajikair::after
+{
+    background-position: 0 -750px;
+}
+
+.logo.transaero::after
+{
+    background-position: 0 -800px;
+}
+
+.logo.uralairlines::after
+{
+    background-position: 0 -850px;
+}

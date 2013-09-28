@@ -1,13 +1,19 @@
 /**
- * Данный способ нельзя назвать универсальным, ведь кроме старых браузеров, он не работает также и в последнем Firefox.
+ * Данный способ нельзя назвать универсальным, ведь кроме старых браузеров,
+ * он не работает также и в последнем Firefox.
  */
-tbody tr:hover {
+tbody tr:hover
+{
     background: #fcf8e3;
 }
-td:hover {
+
+td:hover
+{
     background: #fbeed5;
 }
-td:hover::after {
+
+td:hover::after
+{
     background: #fcf8e3;
     content: ' ';
     display: block;
