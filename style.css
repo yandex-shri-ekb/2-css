@@ -1,0 +1,82 @@
+table
+{
+    color: #333;
+    border-bottom: 7px solid rgb(200, 200, 0);
+    cursor: pointer;
+}
+
+th, td
+{
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+th
+{
+    background-color: rgb(200, 200, 0);
+    color: #fff;
+    font: normal 1em sans-serif;
+}
+
+td
+{
+    text-align: center;
+}
+
+img
+{
+    height: 40px;
+}
+
+/*/// task 1 ///*/
+tr:nth-child(odd)
+{
+    background-color: rgba(200, 200, 0, .2);
+}
+
+/*/// task 2 ///*/
+col:nth-of-type(odd)
+{
+    background-color: rgba(200, 200, 0, .2);
+}
+
+/*/// task 3 ///*/
+tr:hover
+{
+    background-color: rgba(200, 200, 0, .6);
+}
+
+/* the code below is a complete madness and I don't fully understand it */
+/* howewer it seems to be the only way to highlight columns on hover without js */
+
+/* it's not supported by either ie or ff so i've prepared a couple of js snippets */
+/* you can find them in fallback.js file */
+
+/* 
+ *  @author Matt Walton 
+ *  @link   http://blog.thinkingstiff.com/2012/06/26/highlight-table-column-on-hover-using-css/
+ */
+/*table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+    overflow: hidden;
+    z-index: 1;
+}
+ 
+th, td
+{
+    position: relative;
+}
+
+td:hover::after
+{
+    background-color: rgba(200, 200, 0, .6);
+    content: '';
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: -1;
+}*/

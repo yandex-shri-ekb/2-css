@@ -15,3 +15,9 @@
 
 ### Задание №3
 Реализуйте подсветку «крестом», когда по наведению курсором на определённую ячейку соответствующие столбец и строчка подсвечиваются одним цветом.
+
+## Решения
+
+* [Pure CSS](http://jsfiddle.net/sameoldmadness/PyhZK/)
+* [jQuery](http://jsfiddle.net/sameoldmadness/Th449/)
+* [VanillaJS](http://jsfiddle.net/sameoldmadness/HzwK7/)
