@@ -1,0 +1,14 @@
+/* Общие */
+
+th,
+td
+{
+	padding: 7px 0;
+}
+
+/* Окраска строк */
+
+tr:nth-child(odd)
+{
+	background: #F4F4F4;
+}

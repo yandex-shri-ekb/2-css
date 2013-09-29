@@ -1,0 +1,19 @@
+/* Общие */
+
+th,
+td
+{
+	height: 100px;
+}
+
+/* Окраска строк */
+
+table
+{
+	background: url('img/bg.png') 0 -1px;
+}
+
+td /* Для IE7 */
+{
+	background: transparent;
+}
