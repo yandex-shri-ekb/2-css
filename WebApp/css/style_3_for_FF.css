@@ -23,7 +23,7 @@ td,
 th
 {
    text-align: center;
-   height: 45px;
+   height: 45px
 }
 
 th
@@ -65,7 +65,7 @@ div:hover:before
    position: absolute;
    content: " ";
    top: -90000px;
-   z-index: 1
+   z-index: -1
 }
 
 div:hover:before, tr:hover
