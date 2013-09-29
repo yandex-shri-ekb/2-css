@@ -14,15 +14,15 @@ td:hover
 
 td:hover::after
 {
-    background: #fcf8e3;
-    content: '';
-    display: block;
-    height: 5000px;
-    left: 0;
     position: absolute;
-    top: -2500px;
-    width: 100%;
     z-index: -1;
+    top: -2500px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 5000px;
+    content: '';
+    background: #fcf8e3;
 }
 
 @-moz-document url-prefix()
@@ -40,22 +40,22 @@ td:hover::after
 
     td div
     {
+        position: relative;
         height: 100%;
         padding: 8px;
-        position: relative;
     }
 
     td div:hover::after
     {
-        background: #fcf8e3;
-        content: '';
-        display: block;
-        height: 5000px;
-        left: 0;
         position: absolute;
-        top: -2500px;
-        width: 100%;
         z-index: -1;
+        top: -2500px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 5000px;
+        content: '';
+        background: #fcf8e3;
     }
 
     td:hover::after
