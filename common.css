@@ -24,6 +24,10 @@ th
     position: relative;
 }
 
+td {
+    vertical-align: top;
+}
+
 .logo
 {
     border-bottom: 1px dotted #000;

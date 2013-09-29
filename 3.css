@@ -24,3 +24,42 @@ td:hover::after
     width: 100%;
     z-index: -1;
 }
+
+@-moz-document url-prefix()
+{
+    td
+    {
+        height: 100%;
+        padding: 0;
+    }
+
+    tr
+    {
+        height: 1px;
+    }
+
+    td div
+    {
+        height: 100%;
+        padding: 8px;
+        position: relative;
+    }
+
+    td div:hover::after
+    {
+        background: #fcf8e3;
+        content: '';
+        display: block;
+        height: 5000px;
+        left: 0;
+        position: absolute;
+        top: -2500px;
+        width: 100%;
+        z-index: -1;
+    }
+
+    td:hover::after
+    {
+        display: none;
+    }
+}
