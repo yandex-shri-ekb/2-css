@@ -1,3 +1,4 @@
+/*jslint browser: true*/
 (function () {
     'use strict';
 
@@ -5,17 +6,17 @@
     // jQuery //
     ////////////
 
-    function toggleClass() {
-        var t = parseInt($(this).index()) + 1,
-            p = parseInt($(this).parent('tr').index()) + 1;
-        
-        $([])
-            .add('td:nth-child(' + t + ')')
-            .add('tr:nth-child(' + p + ')')
-            .toggleClass('highlighted');
-    }
+    // function toggleClass() {
+    //     var t = parseInt($(this).index()) + 1,
+    //         p = parseInt($(this).parent('tr').index()) + 1;
 
-    $('td').hover(toggleClass, toggleClass);
+    //     $([])
+    //         .add('td:nth-child(' + t + ')')
+    //         .add('tr:nth-child(' + p + ')')
+    //         .toggleClass('highlighted');
+    // }
+
+    // $('td').hover(toggleClass, toggleClass);
 
     ///////////////
     // VanillaJS //
@@ -25,19 +26,24 @@
         rows  = Array.prototype.slice.call(document.querySelectorAll("tr")),
         index = function (cell) {
             var siblings = cell.parentNode.childNodes,
-                num = 0;
+                num = 0,
+                i;
 
-            for (var i = 0; i < siblings.length; i += 1) {
-                if (siblings[i] === cell) return num;
-                if (siblings[i].nodeType == 1) num += 1;
+            for (i = 0; i < siblings.length; i += 1) {
+                if (siblings[i] === cell) {
+                    return num;
+                }
+                if (siblings[i].nodeType === 1) {
+                    num += 1;
+                }
+            }
         };
-    }
 
     cells.forEach(function (cell) {
-        cell.addEventListener('mouseover', function() {
+        cell.addEventListener('mouseover', function () {
             var cellIndex = index(cell);
 
-            rows.forEach(function (row, index) {
+            rows.forEach(function (row) {
                 var cell = row.querySelectorAll('td, th')[cellIndex];
 
                 cell['data-background-color'] = cell.style.backgroundColor;
@@ -45,13 +51,11 @@
             });
         }, true);
 
-        cell.addEventListener('mouseout', function() {
+        cell.addEventListener('mouseout', function () {
             var cellIndex = index(cell);
 
-            rows.forEach(function (row, index) {
+            rows.forEach(function (row) {
                 var cell = row.querySelectorAll('td, th')[cellIndex];
-
-                console.log(cell['data-background-color']);
 
                 cell.style.backgroundColor = cell['data-background-color'];
             });
