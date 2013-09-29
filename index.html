@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Information board</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Яндекс табло аэропорта</h1>
+        <div class="first-board">
+            <h2>Таблица №1 - с разметкой "зеброй"</h2>
+            <table>
+                <tr>
+                    <th>Авиакомпания</th>
+                    <th>Рейс</th>
+                    <th>Самолет</th>
+                    <th>Пункт назначения</th>
+                    <th>Время вылета плановое</th>
+                    <th>Время вылета фактическое</th>
+                    <th>Статус</th>
+                </tr>
+                <tr>
+                    <td><img src="images/aeroflot.gif" alt="logo"/>Аэрофлот</td>
+                    <td>Su-144</td>
+                    <td>Airbus A319</td>
+                    <td>Барселона (Эль-Прат)</td>
+                    <td>26 сентября, 08:30</td>
+                    <td>26 сентября, 09:30</td>
+                    <td>прибыл</td>
+                </tr>
+                <tr>
+                    <td><img src="images/ural.gif" alt="logo"/>Уральские авиалинии</td>
+                    <td>SVR-255</td>
+                    <td>Airbus A320</td>
+                    <td>Родос (Диагорас)</td>
+                    <td>26 сентября, 09:30</td>
+                    <td>26 сентября, 09:30</td>
+                    <td>отменён</td>
+                </tr>
+                <tr>
+                    <td><img src="images/utair.gif" alt="logo"/>Utair</td>
+                    <td>U707</td>
+                    <td>Airbus A321</td>
+                    <td>Женева (Куантран)</td>
+                    <td>26 сентября, 10:30</td>
+                    <td>26 сентября, 10:40</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img src="images/utair.gif" alt="logo"/>Utair</td>
+                    <td>U708</td>
+                    <td>Airbus A321</td>
+                    <td>Женева (Куантран)</td>
+                    <td>26 сентября, 10:31</td>
+                    <td>26 сентября, 10:41</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img src="images/utair.gif" alt="logo"/>Utair</td>
+                    <td>U709</td>
+                    <td>Airbus A321</td>
+                    <td>Женева (Куантран)</td>
+                    <td>26 сентября, 10:32</td>
+                    <td>26 сентября, 10:42</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="second-board">
+            <h2>Таблица №2 - с разметкой "крестом"</h2>
+            <table>
+                <tr>
+                    <th>Авиакомпания</th>
+                    <th>Рейс</th>
+                    <th>Самолет</th>
+                    <th>Пункт назначения</th>
+                    <th>Время вылета плановое</th>
+                    <th>Время вылета фактическое</th>
+                    <th>Статус</th>
+                </tr>
+                <tr>
+                    <td><img src="images/aeroflot.gif" alt="logo"/>Аэрофлот</td>
+                    <td>Su-144</td>
+                    <td>Airbus A319</td>
+                    <td>Барселона (Эль-Прат)</td>
+                    <td>26 сентября, 08:30</td>
+                    <td>26 сентября, 09:30</td>
+                    <td>прибыл</td>
+                </tr>
+                <tr>
+                    <td><img src="images/ural.gif" alt="logo"/>Уральские авиалинии</td>
+                    <td>SVR-255</td>
+                    <td>Airbus A320</td>
+                    <td>Родос (Диагорас)</td>
+                    <td>26 сентября, 09:30</td>
+                    <td>26 сентября, 09:30</td>
+                    <td>отменён</td>
+                </tr>
+                <tr>
+                    <td><img src="images/utair.gif" alt="logo"/>Utair</td>
+                    <td>U707</td>
+                    <td>Airbus A321</td>
+                    <td>Женева (Куантран)</td>
+                    <td>26 сентября, 10:30</td>
+                    <td>26 сентября, 10:40</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img src="images/utair.gif" alt="logo"/>Utair</td>
+                    <td>U708</td>
+                    <td>Airbus A321</td>
+                    <td>Женева (Куантран)</td>
+                    <td>26 сентября, 10:31</td>
+                    <td>26 сентября, 10:41</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img src="images/utair.gif" alt="logo"/>Utair</td>
+                    <td>U709</td>
+                    <td>Airbus A321</td>
+                    <td>Женева (Куантран)</td>
+                    <td>26 сентября, 10:32</td>
+                    <td>26 сентября, 10:42</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="third-board">
+            <h2>Таблица №3 - При наведении курсора на определённую ячейку, соответствующие столбец и строчка подсвечиваются одним цветом.</h2>
+            <table>
+                <tbody class="title-table">
+                    <tr>
+                        <td>Авиакомпания</td>
+                        <td>Рейс</td>
+                        <td>Самолет</td>
+                        <td>Пункт назначения</td>
+                        <td>Время вылета плановое</td>
+                        <td>Время вылета фактическое</td>
+                        <td>Статус</td>
+                    </tr>
+                </tbody>
+                <tr>
+                    <td><img src="images/aeroflot.gif" alt="logo"/>Аэрофлот</td>
+                    <td>Su-144</td>
+                    <td>Airbus A319</td>
+                    <td>Барселона (Эль-Прат)</td>
+                    <td>26 сентября, 08:30</td>
+                    <td>26 сентября, 09:30</td>
+                    <td>прибыл</td>
+                </tr>
+                <tr>
+                    <td><img src="images/ural.gif" alt="logo"/>Уральские авиалинии</td>
+                    <td>SVR-255</td>
+                    <td>Airbus A320</td>
+                    <td>Родос (Диагорас)</td>
+                    <td>26 сентября, 09:30</td>
+                    <td>26 сентября, 09:30</td>
+                    <td>отменён</td>
+                </tr>
+                <tr>
+                    <td><img src="images/utair.gif" alt="logo"/>Utair</td>
+                    <td>U707</td>
+                    <td>Airbus A321</td>
+                    <td>Женева (Куантран)</td>
+                    <td>26 сентября, 10:30</td>
+                    <td>26 сентября, 10:40</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img src="images/utair.gif" alt="logo"/>Utair</td>
+                    <td>U708</td>
+                    <td>Airbus A321</td>
+                    <td>Женева (Куантран)</td>
+                    <td>26 сентября, 10:31</td>
+                    <td>26 сентября, 10:41</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img src="images/utair.gif" alt="logo"/>Utair</td>
+                    <td>U709</td>
+                    <td>Airbus A321</td>
+                    <td>Женева (Куантран)</td>
+                    <td>26 сентября, 10:32</td>
+                    <td>26 сентября, 10:42</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript">
+        $('.third-board td').hover(function() {
+            var t = parseInt($(this).index()) + 1;
+                $('.third-board td:nth-child(' + t + ')').addClass('backgroudhover');
+            },
+            function() {
+                var t = parseInt($(this).index()) + 1;
+                $('.third-board td:nth-child(' + t + ')').removeClass('backgroudhover');
+        });
+    </script>
+</body>
+</html>

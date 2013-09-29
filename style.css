@@ -1,0 +1,129 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font: 14px calibri, sans-serif;
+}
+
+.container
+{
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px auto;
+}
+
+h1,
+th:first-child,
+.title-table td:first-child
+{
+    text-align: center;
+}
+
+h1:first-letter
+{
+    color: red;
+}
+
+h1
+{
+    font-weight:400 ;
+}
+
+h2
+{
+    font: 16px calibri;
+}
+
+table
+{
+    width: 100%;
+    border-spacing: 0;
+    border: 1px solid #E6E6E6;
+    margin: 0 0 30px;
+}
+
+.first-board tr:nth-child(even),
+.second-board tr:nth-child(even)  /* 1 вариант*/
+{
+    background: #EBF4E5;
+}
+
+
+/*
+2 вариант:
+
+tr:nth-child(2n+2)
+{
+    background: #EBF4E5;
+}
+
+3 вариант:
+
+Можно назначить один класс всем четным, например background-odd, тогда код будет такой:
+.background-odd
+{
+    background: #EBF4E5;
+}
+
+*/
+
+.second-board tr:nth-child(even) > td:nth-child(even),
+.third-board tbody td:hover
+{
+    background:#D8E1D2;
+}
+
+.second-board th:nth-child(even),
+.third-board tbody tr:hover,
+.second-board td:nth-child(even),
+.backgroudhover
+{
+    background: #EBF4E5;
+}
+
+th,
+.title-table td
+{
+    padding: 15px 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+td
+{
+    padding: 10px;
+}
+
+img
+{
+    width:110px;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+
+/*  Без js есть такой способ, но он не работает в firefox,
+поэтому я не стала использовать этот вариант:
+
+table
+{
+    overflow: hidden;
+    z-index: 1;
+}
+
+.third-board td, .third-board th
+{
+    position: relative;
+}
+
+.third-board td:hover:after
+{
+    background-color: #EBF4E5;
+    content: ' ';
+    height: 1000px;
+    left: 0;
+    position: absolute;
+    top: -500px;
+    width: 100%;
+    z-index: -1;
+}
+*/
