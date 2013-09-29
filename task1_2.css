@@ -1,0 +1,19 @@
+/* Общие */
+
+th,
+td
+{
+	padding: 7px 0;
+}
+
+/* Окраска строк */
+
+tr:nth-child(2n+1)
+{
+	background: #F4F4F4;
+}
+
+tr
+{
+	background: expression(this.rowIndex % 2 == 0 ? "#F4F4F4" : "none");
+}

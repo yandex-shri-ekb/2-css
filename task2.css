@@ -1,0 +1,40 @@
+/* Общие */
+
+th,
+td
+{
+	padding: 7px 0;
+}
+
+/* Окраска строк и столбцов*/
+
+td:nth-child(even),
+tr:nth-child(odd)
+{
+	background: #F4F4F4;
+}
+
+/*
+
+Ну или можно так:
+
+col:nth-child(even)
+{
+	background: #F4F4F4;
+}
+
+*/
+
+/*
+
+А можно и так:
+
+col.even
+{
+	background: #F4F4F4;
+}
+
+Тогда бы мы использовали классов по минимуму, не
+указывая класс у каждого <TD>
+
+*/
