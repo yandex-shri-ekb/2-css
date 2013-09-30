@@ -1,0 +1,6 @@
+/* Эмуляция разметки столбцов зеброй для IE6-8 */
+/* Использовать нужно именно `background-color` */
+td
+{
+    background-color: expression(this.cellIndex % 2 == 0 ? '#e2e2e2' : null);
+}

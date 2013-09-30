@@ -1,5 +1,6 @@
-/* Эмуляция разметки зеброй для IE6-8 */
+/* Эмуляция разметки строк зеброй для IE6-8 */
+/* Использовать нужно именно `background-color` */
 tr
 {
-    background: expression(this.rowIndex % 2 == 0 ? '#eee' : null);
+    background-color: expression(this.rowIndex % 2 == 0 ? '#eee' : null);
 }
