@@ -1,0 +1,100 @@
+html,
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    margin: 30px 10%;
+    font: 14px/1.25 Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+    font-size: 22px;
+    font-weight: normal;
+}
+
+table
+{
+    line-height: 1;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+td
+{
+    padding: .45em;
+}
+
+/* Блок иконок авиакомпаний */
+.company-icon
+{
+    display: block;
+    width: 100px;
+    height: 40px;
+    background: url("../img/air-company-sprites.gif") no-repeat;
+}
+
+.company-icon_name_vim-aitlines
+{
+    background-position: 0 0;
+}
+
+.company-icon_name_trans-aero
+{
+    background-position: 0 -40px;
+}
+
+.company-icon_name_scat
+{
+    background-position: 0 -80px;
+}
+
+.company-icon_name_s7-airlines
+{
+    background-position: 0 -120px;
+}
+
+.company-icon_name_russia
+{
+    background-position: 0 -160px;
+}
+
+.company-icon_name_niki
+{
+    background-position: 0 -200px;
+}
+
+.company-icon_name_etihad-air
+{
+    background-position: 0 -240px;
+}
+
+.company-icon_name_egypt-air
+{
+    background-position: 0 -280px;
+}
+
+.company-icon_name_brussels-air
+{
+    background-position: 0 -320px;
+}
+
+.company-icon_name_azerbaidzhan
+{
+    background-position: 0 -360px;
+}
+
+.company-icon_name_air-berlin
+{
+    background-position: 0 -400px;
+}
+
+.company-icon_name_aeroflot
+{
+    background-position: 0 -440px;
+}
