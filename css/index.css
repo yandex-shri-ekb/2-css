@@ -67,37 +67,34 @@ td img
 
 /**
   * Индивидуальные стили для каждой из таблиц
-  * Заметьте, что классы используются только для разграничения стилей нескольких таблиц на одной странице
-  * Без использования классов можно было бы разнести таблицы в разные html-файлы
-  * Либо использовать различные контейнеры для таблиц типа div div div, но семантика ...
   */
-.table1 tr:nth-child(2n)
+#table1 tr:nth-child(2n)
 {
     background: rgba(60, 185, 255, .1);
 }
 
-.table2 tr:nth-child(2n)
+#table2 tr:nth-child(2n)
 {
     background: rgba(60, 185, 255, .2);
 }
 
-.table2 td:nth-child(2n)
+#table2 td:nth-child(2n)
 {
     background: rgba(60, 185, 255, .1);
 }
 
-.table3 tbody tr:hover
+#table3 tbody tr:hover
 {
     background: rgba(60, 185, 255, .2);
 }
 
 /* Специально не объединено с table2, чтобы была видна логика каждой таблицы */
-.table3 td:hover
+#table3 td:hover
 {
     background: rgba(60, 185, 255, .5);
 }
 
-.table3 td:hover div:after
+#table3 td:hover div:after
 {
     position: absolute;
     top: -10000%;
