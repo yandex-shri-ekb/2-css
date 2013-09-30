@@ -1,0 +1,61 @@
+tbody tr:hover
+{
+    background: #fcf8e3;
+}
+
+td:hover
+{
+    background: #fbeed5;
+}
+
+td:hover::after
+{
+    position: absolute;
+    z-index: -1;
+    top: -2500px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 5000px;
+    content: '';
+    background: #fcf8e3;
+}
+
+@-moz-document url-prefix()
+{
+    td
+    {
+        height: 100%;
+        padding: 0;
+    }
+
+    tr
+    {
+        height: 1px;
+    }
+
+    td div
+    {
+        position: relative;
+        height: 100%;
+        padding: 8px;
+    }
+
+    td div:hover::after
+    {
+        position: absolute;
+        z-index: -1;
+        top: -2500px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 5000px;
+        content: '';
+        background: #fcf8e3;
+    }
+
+    td:hover::after
+    {
+        display: none;
+    }
+}

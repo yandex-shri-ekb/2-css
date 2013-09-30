@@ -1,0 +1,15 @@
+/**
+ * Если добавить в table col-элементы в количестве, равным количеству столбцов
+ * в таблице, то вместо tbody td:nth-child(odd) можно было бы использовать
+ * col:nth-child(odd).
+ */
+tbody tr:nth-child(odd),
+tbody td:nth-child(odd)
+{
+    background: #fcf8e3;
+}
+
+tbody tr:nth-child(odd) td:nth-child(odd)
+{
+    background: #fbeed5;
+}
