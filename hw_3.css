@@ -1,0 +1,32 @@
+table 
+{ 
+    position: relative;
+}
+
+tr:hover
+{ 
+	background: rgba(211, 222, 243, .5);
+}
+
+td,
+td:hover::after
+{ 
+	width: 16.66%;
+	padding: 10px 0;
+}
+
+td:hover
+{
+    background: #ffc;
+}
+
+td:hover::after 
+{
+    content: '';    
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(211, 222, 243, .5);
+    z-index: -1;
+}
