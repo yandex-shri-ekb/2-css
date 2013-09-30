@@ -1,0 +1,6 @@
+td.hover,
+tr:hover td
+{
+    background: #333;
+    color: #fff;
+}
