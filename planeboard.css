@@ -1,0 +1,46 @@
+﻿#planeBoard
+{
+	margin: 0 10%;
+	width: 80%;
+	border: 1px solid #d3d3d3;
+	border-collapse: collapse;
+	font: 12px/15px "Helvetica Neue",Arial, Helvetica, sans-serif;
+	border-spacing: 0;
+	text-align: center;
+	color: #555;
+}
+
+#planeBoard td
+{
+	border: 1px solid #e0e0e0;
+}
+
+#planeBoard thead > tr
+{
+	height: 80px;
+	background: #e8eaeb;
+	font-weight: bold;
+}
+
+#planeBoard tbody > tr
+{
+	height: 50px;
+}
+
+#planeBoard td > img
+{
+	height: 40px;
+	width: 40px;
+}
+
+#planeBoard tbody tr:nth-of-type(odd),
+#planeBoard tbody td:nth-of-type(odd)
+{
+	background: rgba(246, 246, 246, 0.5);
+}
+
+/*подсветка строки. Столбец подсвечивается через js*/
+#planeBoard tbody tr:hover td
+{
+	background: #87CEFA;
+}
