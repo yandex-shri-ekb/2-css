@@ -1,0 +1,5 @@
+/* Эмуляция разметки зеброй для IE6-8 */
+tr
+{
+    background: expression(this.rowIndex % 2 == 0 ? '#eee' : null);
+}

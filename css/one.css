@@ -1,0 +1,24 @@
+/* Разметка зеброй с помощью псевдоклассов (не поддерживается IE6-8) */
+
+tr:nth-child(odd)
+{
+    background-color: #eee;
+}
+
+/* Разметка зеброй с помощью классов */
+
+tr.odd
+{
+    background: #eee;
+}
+
+/* Разметка зеброй с помощью селектора смежного элемента,
+требуется писать селектор для каждой нечетной строки (не поддерживается IE6) */
+
+tr:first-child,
+tr:first-child + tr + tr,
+tr:first-child + tr + tr + tr + tr,
+tr:first-child + tr + tr + tr + tr + tr + tr
+{
+    background: #eee;
+}
