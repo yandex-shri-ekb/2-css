@@ -30,12 +30,12 @@ th
    background: #d0d0ff
 }
 
-td:nth-last-child(2n+1)
+td:nth-last-child(odd)
 {
    background: rgba(169, 188, 241, .2)
 }
 
-tr:nth-last-child(2n+1)
+tr:nth-last-child(odd)
 {
    background: rgba(164, 182, 235, .2)
 }
