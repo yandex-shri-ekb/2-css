@@ -1,98 +1,126 @@
 body
 {
-    font:normal 100% Arial, Geneva, sans-serif;
+    font:100%/1.125em Arial, Helvetica, sans-serif normal;
     background: #fff;
     color: #000;
 }
 
-.table
+table, .table
 {
-    margin: auto;
-    padding: 0;
-    max-width:62.5em;
-    display: table;
-    text-align: center;
-    border:1px red solid;   
+    max-width: 62.5%;
+    margin: 0 auto;
+    border-collapse: collapse;
 }
 
-.header
+caption, .caption
 {
-   
+    font:1.7em/1.3 bold;
+    margin: 1em 0;
+    text-shadow: 0.3em 0.3em 1.5em #777;
     text-align: center;
-    border: 1px green solid;
-    display:
-
 }
 
-
-.caption
+tr, td, th
 {
-	background: #404853;
+    border: 0.1em #fff solid;
+    text-align: center;
+    padding: 0 0.3em;
+}
+
+tr
+{
+    font: 0.8625em/1.1 bold;
+}
+
+th
+{
+    font:0.7625em/1.1 bold;
+    background: #404853;
     background: linear-gradient(#687587, #404853);
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     border-right: 1px solid rgba(255, 255, 255, 0.1);
     color: #fff;
-    padding: 8px;
+    padding: 0.5em 0.2em;
+    letter-spacing: 0.1em;
+}
+
+/*Вариант № 1 самый простой выбираем четные/нечетные строки */
+tr:nth-child(odd)
+{
+    background: #e8eae9;
+}
+
+tr:nth-child(even)
+{
+    background: #c6c9cc;
+}
+
+col.alt
+{
+   background: green;
+}
+/*Вариант № 2. Просто вариант бессмысленный и беспощадный
+tr + tr, tr+tr+tr+tr
+{
+    background: #c6c9cc;
+}
+
+tr+tr+tr
+{
+    background: #e8eae9;
+}
+*/
+
+/*Задание 2 для нечетных столбцов*/
+
+td:nth-child(odd)
+{
+    background: #666680;
+}
+
+
+
+
+/*Задание № 3 полукрест*/
+
+.table
+{
+    display: table;
+}
+
+.caption
+{
     display: table-caption;
+    margin:5em 0 2em;
+}
+
+.th_cell
+{
+    display: table-cell;
+    text-align: center;
 }
 
 .row
 {
     display: table-row;
+    font: 0.8625em/1.1 bold;
+    vertical-align: middle;
 }
 
 .cell
 {
-   display: table-cell;
-   border: 1px yellow solid;
-}
-
-.cells
-{
     display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.cell:nth-child(odd)
+ 
+.row:hover:nth-child(2n)
 {
-     background: #e8eae9;
+    background: #69f;
 }
 
-.row:nth-child(even)
+.cell:hover
 {
-    background: #0000ff; 
-}
-
-.row:hover:nth-child(2n+1)
-{
-   background: #e8eae9;
-}
-
-.cell:hover:nth-child(2n)
-{
-    background: #ff0545;
-}
-
-
-
-
-
-td {
-  border-right: 1px solid #c6c9cc;
-  border-bottom: 1px solid #c6c9cc;
-  padding: 8px;
-}
-td:first-child {
-  border-left: 1px solid #c6c9cc;
-}
-tr:first-child td {
-  border-top: 0;
-}
-tr:nth-child(even) td {
-  background: #e8eae9;
-}
-tr:last-child td:first-child {
-  border-bottom-left-radius: 4px;
-}
-tr:last-child td:last-child {
-  border-bottom-right-radius: 4px;
+    background: #FFFF66;
 }
