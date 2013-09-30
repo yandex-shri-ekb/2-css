@@ -12,16 +12,11 @@ table
    outline: 1px solid #ddd
 }
 
-span
-{
-   display: block;
-   text-align: center
-}
-
 td, th
 {
    padding: 0;
-   vertical-align: middle
+   vertical-align: middle;
+   text-align: center
 }
 
 img
@@ -72,7 +67,8 @@ td:before
    width: 100%;
    top: 0;
    bottom: 0;
-   content: ''
+   content: '';
+   display: block;
 }
 
 tr:hover, td:hover:before
