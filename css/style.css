@@ -1,0 +1,189 @@
+html,
+body,
+h1,
+h2,
+img,
+table
+{
+    margin: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body
+{
+    background: #fff;
+    font: normal 13px Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: #000;
+    min-width: 600px;
+    padding: 30px;
+}
+
+h1
+{
+    font: normal 36px Verdana, Helvetica, sans-serif;
+    text-align: right;
+    border-bottom: 4px solid #ffcc33;
+    margin: 0 0 40px;
+    padding: 0 0 10px;
+}
+
+h1 span
+{
+    color: #ff0000;
+}
+
+h2
+{
+    font: bold 20px Tahoma, Geneva, sans-serif;
+    margin: 40px 0 20px;
+    padding-bottom: 11px;
+}
+
+h2 span
+{
+    color: #ff0000;
+}
+
+table
+{
+    width: 100%;
+    border: 2px solid #ffcc33;
+    margin: 10px 0;
+    text-align: center;
+    border-spacing: 2px;
+    overflow: hidden;
+}
+
+thead tr
+{
+    background: #ffcc33;
+    color: #ff3100;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+th,
+td
+{
+    padding: 10px;
+}
+
+/* Первый вариант реализации "Зебры" */
+tbody tr:nth-child(2n)
+{
+    background: #ffffcc;
+    color: #ff6600;
+}
+
+/** Второй вариант реализации "Зебры" 
+*   tbody tr:nth-child(even)
+*   {
+*       background: #ffffcc;
+*       color: #ff6600;
+*   }
+*/
+
+/** Третий вариант реализации "Зебры":
+*   При составлении таблицы для каждой четной строки прописывать/генерировать класс, например, ".even"
+*   even
+*   {
+*       background: #ffffcc;
+*       color: #ff6600;
+*   }  
+*/
+
+/** Четвертый вариант реализации "Зебры":
+*   С помощью селекторов соседей
+*   tr + tr
+*   tr + tr + tr + tr
+*   tr + tr + tr + tr + tr
+*   {
+*       background: #ffffcc;
+*       color: #ff6600;
+*   }  
+*/
+
+/* Так же, разумеется, есть варианты с использованиям JavaScript и jQuery */
+
+#cross tr td:nth-child(2n),
+#crosshover tr td:nth-child(2n)
+{
+    background: #ffff99;
+}
+
+#cross tr:nth-child(2n) td:nth-child(2n),
+#crosshover tr:nth-child(2n) td:nth-child(2n)
+{
+    background: #ffe9cf;
+}
+
+#crosshover th,
+#crosshover td
+{
+    padding: 0;
+}
+
+#crosshover th div,
+#crosshover td div
+{
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+#crosshover td div
+{
+    height: 20px;
+}
+
+@media (max-width: 900px) {
+    #crosshover td div
+    {
+       height: 60px;
+    }
+}
+@media (max-width: 1245px) {
+    #crosshover td div
+    {
+       height: 30px;
+    }
+}
+
+#crosshover tr:hover td div
+{
+    background: #ccffcc;
+    z-index: 2;
+}
+
+#crosshover td:hover div:before
+{
+    content: '';
+    position: absolute;
+    background: #ccffcc;
+    width: 100%;
+    height: 2000px;
+    top: -1000px;
+    left: 0;
+    z-index: -2;
+}
+
+#crosshover td:hover div:after
+{
+    content: '';
+    position: absolute; 
+    background: #99ff99;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    cursor: pointer;
+}
+/** Так же есть вариант реализовать Задачу #3,
+*   используя тэг <col>, но в таком случае, нужно
+*   будет задать фиксированную ширину для каждого столбца,
+*   а хотелось бы, чтобы таблица была респосив.
+*/
