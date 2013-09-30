@@ -1,0 +1,22 @@
+/* [PRINT: common] */
+
+@media print {
+
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+        color: #666;
+        word-wrap: break-word;
+        border-bottom: none;
+    }
+
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+}

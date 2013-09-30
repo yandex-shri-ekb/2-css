@@ -1,0 +1,26 @@
+/* [PAGE] */
+
+.page {
+    background: #ccc;
+    color: #000;
+}
+
+.page-width {
+    position: relative;
+    width: 990px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+/* [PRINT: page] */
+@media print {
+
+    @page {
+        margin: 40px;
+    }
+
+    .page-width {
+        width: auto;
+    }
+
+}

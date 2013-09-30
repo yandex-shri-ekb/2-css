@@ -1,0 +1,53 @@
+/* Normalize css 0.0.1 | 2013, Sergey Gogolev (gogoleff@gmail.com) | CC BY 3.0 */
+/* Inspired by normalize.css 2.1.3 and 1.1.3 | Nicolas Gallagher (git.io/normalize) | MIT */
+
+/* [HTML and BODY] */
+
+/* Set default font family to sans-serif */
+/* Prevent text size adjust after orientation change, without disabling user zoom in iOS and Windows Phone */
+html {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Set default font size */
+/* Remove default margin */
+body {
+    font-size: 12px;
+    margin: 0;
+}
+
+/* [LINKS] */
+
+/* Remove the gray background color from active links in IE 10 */
+a {
+    background: transparent;
+}
+
+/* Address `outline` inconsistency between Chrome and other browsers */
+a:focus {
+    outline: thin dotted;
+}
+
+/* Improve readability when focused and also mouse hovered in all browsers */
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* [TYPOGRAPHY] */
+
+/* Address <abbr> styling not present in IE 8/9, Safari 5, and Chrome */
+abbr[title] {
+    border-bottom: 1px dotted;
+    cursor: pointer;
+}
+
+/* [TABLES] */
+
+/* Remove spacing between <table> cells */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
