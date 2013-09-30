@@ -15,12 +15,19 @@ td, th
 
 tr:nth-child(odd) td
 {
-    background: rgba(221, 221, 221, 0.5);
+    background: rgba(204, 153, 204, 0.8);
 }
 
-tr:nth-child(even) td
+.col4, .col6, .col8
 {
-    background: rgba(175, 202, 202, 0.5);
+    background: rgb(221, 221, 221);
+    opacity: 0.5;
+}
+
+.col1, .col3, .col5, .col7
+{
+    background: rgb(175, 202, 202);
+    opacity: 0.8;
 }
 
 .logo

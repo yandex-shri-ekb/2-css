@@ -17,7 +17,7 @@ th
 td, th
 {
     position: relative;
-    border: 1px dotted #c9c;
+    border: 1px groove #c9c;
 }
 
 tr:hover td
@@ -51,52 +51,52 @@ td:hover::after
 
 .company_logo1
 {
-    background: url(img/logo/1.jpg) ;  /*Ак Барс Авиа*/
+    background: url(img/logo/1.jpg)  !important;  /*Ак Барс Авиа*/
 }
 
 .company_logo2
 {
-    background: url(img/logo/2.jpg);  /*Татарстан Авиакомпания*/
+    background: url(img/logo/2.jpg)  !important;  /*Татарстан Авиакомпания*/
 }
 
 .company_logo3
 {
-    background: url(img/logo/3.jpg);  /*Трансаэро авиакомпания*/
+    background: url(img/logo/3.jpg)  !important;  /*Трансаэро авиакомпания*/
 }
 
 .company_logo4
 {
-    background: url(img/logo/4.jpg);  /*Глобус*/
+    background: url(img/logo/4.jpg)  !important;  /*Глобус*/
 }
 
 .company_logo5
 {
-    background: url(img/logo/5.jpg);  /*s7 - Сибирь*/
+    background: url(img/logo/5.jpg)  !important;  /*s7 - Сибирь*/
 }
 
 .company_logo6
 {
-    background: url(img/logo/6.jpg);  /*UAI - Ukraine International Airlines*/
+    background: url(img/logo/6.jpg)  !important;  /*UAI - Ukraine International Airlines*/
 }
 
 .company_logo7
 {
-    background: url(img/logo/7.jpg);  /*TAP Portugal*/
+    background: url(img/logo/7.jpg)  !important;  /*TAP Portugal*/
 }
 
 .company_logo8
 {
-    background: url(img/logo/8.jpg);  /*Туркменховаеллары*/
+    background: url(img/logo/8.jpg)  !important;  /*Туркменховаеллары*/
 }
 
 .company_logo9
 {
-    background: url(img/logo/9.jpg);  /*Ural airlains*/
+    background: url(img/logo/9.jpg)  !important;  /*Ural airlains*/
 }
 
 .company_logo10
 {
-    background: url(img/logo/10.jpg);  /*Oren Air*/
+    background: url(img/logo/10.jpg)  !important;  /*Oren Air*/
 }
 
 
