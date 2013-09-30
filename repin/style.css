@@ -83,7 +83,7 @@ input#hvr:checked ~ table td:hover::after
 	position: absolute;
 	z-index: -1;
 	top: -580px;
-	left: 0px;
+	left: 0;
 	width: 150px;
 	height: 1200px;
 	background: rgba(0,0,255,.3);
