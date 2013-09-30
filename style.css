@@ -1,0 +1,69 @@
+h1
+{
+	text-align: center;
+	font: normal 25px Arial Narrow, sans-serif;
+}
+
+h1:first-letter
+{
+	color: #ff0000;
+}	
+
+img
+{
+	height: 40px;
+}
+
+table
+{
+	margin: 0 auto;
+	padding: 20px 0;
+	width: 90%;
+	font: normal 14px Helvetica, sans-serif;
+}
+
+table,
+th,
+td
+{
+	border: 1px solid #D2D2D2;
+	border-collapse: collapse;
+}
+
+th
+{
+	padding: 10px 7px;
+	background: #E1E1E1;
+}
+
+td
+{
+	text-align: center;
+	padding: 10px 7px;
+	opacity: 1;
+}
+
+/* Раскрашиваем строки через одну */
+
+tr:nth-child(even)
+{
+	background: rgba(127, 212, 255, .15);
+}
+
+/* Можно еще вот так:
+
+tr:nth-of-type(even)
+{
+	background: rgba(127, 212, 255, .15);
+}
+
+tr:nth-child(2n)
+{
+	background: rgba(127, 212, 255, .15);
+}
+*/
+
+td:nth-child(even)
+{
+	background: rgba(170, 127, 255, .15);
+}
