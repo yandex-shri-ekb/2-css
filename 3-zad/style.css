@@ -1,4 +1,6 @@
-﻿table
+﻿/*Пользуясь случаем, хочу передать привет маме!*/
+
+table
 {
     border: 4px dotted #fcc;
     font: 12px Verdana, Geneva, sans-serif;
@@ -9,18 +11,18 @@
 
 th
 {
-  background: #c9c !important; /*!im иначе значение цвета в .col1 перекроет цвет*/
+    background: #c9c !important; /*!im иначе значение цвета в .col1 перекроет цвет*/
 }
 
 td, th
 {
-  position: relative;
-  border: 1px dotted #c9c;
+    position: relative;
+    border: 1px dotted #c9c;
 }
 
 tr:hover td
 {
-  background: #ddd;
+    background: #ddd;
 }
 
 td:hover::after
@@ -35,67 +37,69 @@ td:hover::after
     z-index: -1;
 }
 
+.col1
+{
+    background: #9cc;
+}
+
 .logo
 {
-  height: 35px;
-  width: 120px;
-  background: center;
+    height: 35px;
+    width: 120px;
+    box-shadow: inset 0 0 5px 5px #fff;
 }
 
 .company_logo1
 {
-  background: url(img/logo/1.png) ;  /*Ак Барс Авиа*/
+    background: url(img/logo/1.jpg) ;  /*Ак Барс Авиа*/
 }
 
 .company_logo2
 {
-  background: url(img/logo/2.png);  /*Татарстан Авиакомпания*/
+    background: url(img/logo/2.jpg);  /*Татарстан Авиакомпания*/
 }
 
 .company_logo3
 {
-  background: url(img/logo/3.png);  /*Трансаэро авиакомпания*/
+    background: url(img/logo/3.jpg);  /*Трансаэро авиакомпания*/
 }
 
 .company_logo4
 {
-  background: url(img/logo/4.png);  /*Глобус*/
+    background: url(img/logo/4.jpg);  /*Глобус*/
 }
 
 .company_logo5
 {
-  background: url(img/logo/5.png);  /*s7 - Сибирь*/
+    background: url(img/logo/5.jpg);  /*s7 - Сибирь*/
 }
 
 .company_logo6
 {
-  background: url(img/logo/6.png);  /*UAI - Ukraine International Airlines*/
+    background: url(img/logo/6.jpg);  /*UAI - Ukraine International Airlines*/
 }
 
 .company_logo7
 {
-  background: url(img/logo/7.png);  /*TAP Portugal*/
+    background: url(img/logo/7.jpg);  /*TAP Portugal*/
 }
 
 .company_logo8
 {
-  background: url(img/logo/8.png);  /*Туркменховаеллары*/
+    background: url(img/logo/8.jpg);  /*Туркменховаеллары*/
 }
 
 .company_logo9
 {
-  background: url(img/logo/9.png);  /*Ural airlains*/
+    background: url(img/logo/9.jpg);  /*Ural airlains*/
 }
 
 .company_logo10
 {
-  background: url(img/logo/10.png);  /*Oren Air*/
+    background: url(img/logo/10.jpg);  /*Oren Air*/
 }
 
-.col1
-{
-  background: #9cc;
-}
+
 
 
 
