@@ -16,4 +16,4 @@
 ### Задание №3
 Реализуйте подсветку «крестом», когда по наведению курсором на определённую ячейку соответствующие столбец и строчка подсвечиваются одним цветом.
 
-[artkuz.github.io/2-css/](http://artkuz.github.io/2-css/)
+[artkuz.github.io/2-css/index.html](http://artkuz.github.io/2-css/index.html)
