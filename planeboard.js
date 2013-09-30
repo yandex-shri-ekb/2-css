@@ -1,15 +1,4 @@
-/*
-	Подсветка столбца реализована через JavaScript.
-	Второй способ, который был у меня в голове это назначение каждой нечетной строке/столбцу своего класса.
-	<tr class="oddTr">
-		...
-		<td class="oddTd">
-			...
-	Далее по наведению мыши обновлять background у этих классов. Я считаю, это менее дееспособный вариант, поэтому я выбрал js.
-	 
-*/
-
-function IndexOf(element)
+п»їfunction IndexOf(element)
 {
 	var index = 1;
 	while(element.previousSibling)
@@ -21,7 +10,7 @@ function IndexOf(element)
 	return index;
 }
 
-//получение всех 'td' из таблицы planeBoard
+//РїРѕР»СѓС‡РµРЅРёРµ РІСЃРµС… 'td' РёР· С‚Р°Р±Р»РёС†С‹ planeBoard
 function GetTdElementsFromPlaneBoard()
 {
 	return document.getElementById('planeBoard').getElementsByTagName('tbody')[0].getElementsByTagName('td');
