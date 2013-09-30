@@ -76,6 +76,7 @@ input#hvr:checked ~ table tr:hover td
 {
 	background: rgba(0,0,255,.3);
 }
+
 input#hvr:checked ~ table td:hover::after
 {
 	content: '';
@@ -92,7 +93,8 @@ input#hvr:checked ~ table td:hover::after
 /* Прощай, Лиса */
 @-moz-document url-prefix()
 {
-	input#hvr:checked ~ table td:hover::after {
+	input#hvr:checked ~ table td:hover::after
+	{
 		display: none;
 	}
 }
