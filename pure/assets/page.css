@@ -7,8 +7,9 @@
 
 .page-width {
     position: relative;
-    width: 990px;
+    width: 910px;
     margin: 0 auto;
+    padding: 40px;
     background: #fff;
 }
 
@@ -21,6 +22,7 @@
 
     .page-width {
         width: auto;
+        padding: 0;
     }
 
 }

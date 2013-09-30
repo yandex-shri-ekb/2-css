@@ -1,9 +1,9 @@
 /* [BOARD] */
 
 .departures {
+    overflow: hidden;
     position: relative;
     z-index: 1;
-    padding: 40px;
 }
 
 .departures-table {
@@ -48,7 +48,7 @@
     height: 10000px;
 
     /* 4. Then make this element not occupay its space after cell */
-    margin-bottom: -10000px;
+    margin: 0 0 -10000px;
 
     /* 5. Move this element upwards for height/2 */
     top: -5000px;
@@ -72,13 +72,50 @@
     background: rgba(255, 0, 0, .1);
 }
 
+/* [IE8: departures] */
+
+/* IE8 doesn`t support RGBA -> degradation to image via data:uri */
+.ie8 .departures-row:hover,
+.ie8 .departures-cell:hover:after,
+.ie8 .departures-cell:hover .departures-cell-after {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpi+s/AIAUQYAAEJQEcEkoDEQAAAABJRU5ErkJggg==");
+}
+
+/* [IE7: departures] */
+
+/* IE7 doesn`t support RGBA and data:uri -> degradation to simple image */
+.ie7 .departures-row:hover,
+.ie7 .departures-cell:hover:after,
+.ie7 .departures-cell:hover .departures-cell-after-i {
+    background: url("content/backgrounds/departures-hover.png");
+}
+
+/* IE7 doesn`t support ::after pseudo element -> place it via one-off expression */
+.ie7 .departures-cell {
+    zoom: expression(this.runtimeStyle.zoom = "1", this.appendChild(document.createElement("div")).className="departures-cell-after");
+}
+
+.ie7 .departures-cell-after {
+    zoom: expression(this.runtimeStyle.zoom = "1", this.appendChild(document.createElement("div")).className="departures-cell-after-i");
+
+    position: relative;
+    z-index: -1;
+    height: 10000px;
+    margin: 0 0 -10000px;
+    top: -5000px;
+    left: -15px;
+}
+
+.ie7 .departures-cell-after-i {
+   width: 100%;
+   height: 10000px;
+   padding: 0 15px;
+}
+
+
 /* [PRINT: departures] */
 
 @media print {
-
-    .departures {
-        padding: 0;
-    }
 
     .departures-head {
         font-size: 12px;
