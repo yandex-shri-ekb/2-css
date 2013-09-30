@@ -1,0 +1,98 @@
+table
+{
+	margin: 10px auto;
+	border: 0;
+	padding: 0;
+	width: 1200px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	border-collapse: collapse;
+}
+
+	col, thead, tbody, tr, th, td, img
+	{
+		margin: 0;
+		border: 0;
+		padding: 0;
+	}
+
+	col, th, td
+	{
+		width: 150px;
+	}
+
+		thead tr, th
+		{
+			height: 60px;
+			background: #5f83ba;
+			color: #fff;
+		}
+
+		tbody tr, td
+		{
+			height: 40px;
+			color: #000;
+		}
+
+			th, td
+			{
+				vertical-align: middle;
+				text-align: center;
+				font: 400 17px/20px Helvetica, Arial, sans-serif;
+			}
+
+			td
+			{
+				position: relative;
+			}
+
+				img
+				{
+					display: block;
+				}
+
+/* BACKLIGHTING */
+
+input#row:checked ~ table tbody tr:nth-child(2n)
+{
+	background: rgba(127,127,255,.1);
+}
+
+input#col:checked ~ table col:nth-child(2n)
+{
+	/*Заметил фишку, что если подсвечивать здесь не col:nth-child(2n), 
+	а tr td:nth-child(2n), то исключительно в Опере ячейка, которая
+	находится на пересечении подсвеченных строк и столбцов отказывается
+	накладывать один rgba() на другой, и выдает цвет так, как будто под
+	ячейкой строка не имеет цвет указанный выше, то есть цвета tr и td
+	не смешиваются, а вся колонка окрашивается в цвет, который написан
+	здесь в background. Ради Оперы пришлось ввести в таблицу еще <col>,
+	чтобы ячейки на пересечении цветов окрашивались правильно */
+	background: rgba(127,127,255,.1);
+}
+
+input#hvr:checked ~ table tr:hover td
+{
+	background: rgba(0,0,255,.3);
+}
+input#hvr:checked ~ table td:hover::after
+{
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: -580px;
+	left: 0px;
+	width: 150px;
+	height: 1200px;
+	background: rgba(0,0,255,.3);
+}
+
+/* Прощай, Лиса */
+@-moz-document url-prefix()
+{
+	input#hvr:checked ~ table td:hover::after {
+		display: none;
+	}
+}
