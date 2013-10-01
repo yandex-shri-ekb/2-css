@@ -1,0 +1,6 @@
+/* ie6-7 without classes*/
+
+.flights.striped tr
+{
+	background: expression(this.rowIndex % 2 == 0 ? null : "#f9f9f9");
+}

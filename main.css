@@ -1,0 +1,48 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font: normal 12pt Arial, Helvetica, sans-serif;
+	/*font-size: 16px;*/
+}
+.flights
+{
+	border-collapse: collapse;
+	/*border-spacing: 0;*/
+	margin: 30px auto;
+}
+.flights tr
+{
+	padding: 0;
+	height: 1.6em;
+	text-align: center;
+}
+.flights thead tr
+{
+	font-weight: bold;
+	font-size: 1.2em;
+	vertical-align: bottom;
+}
+.flights tbody tr
+{
+	vertical-align: middle;
+}
+/* ie7 doesn't support tr's border*/
+.flights th,
+.flights td
+{
+	border-bottom: 2px solid #ddd;
+}
+.flights th
+{
+	padding: 5px 8px 0;
+}
+.flights td
+{
+	border-width: 1px;	/* border: 1px; doesn't work in ie8*/
+	padding: 0 3px;
+}
+.flights img
+{
+	height: 1.6em;
+}

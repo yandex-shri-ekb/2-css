@@ -1,0 +1,9 @@
+/* all browsers long long way */
+
+.flights.striped tbody tr:first-child,
+.flights.striped tbody tr:first-child + tr + tr,
+.flights.striped tbody tr:first-child + tr + tr + tr + tr
+/* ... */
+{
+	background: #f9f9f9;
+}
