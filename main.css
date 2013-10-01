@@ -1,6 +1,6 @@
 body
 {
-    font:100%/1.125em Arial, Helvetica, sans-serif normal;
+    font: normal 100%/1.125em Arial, Helvetica, sans-serif;
     background: #fff;
     color: #000;
 }
@@ -14,34 +14,34 @@ table, .table
 
 caption, .caption
 {
-    font:1.7em/1.3 bold;
+    font: bold 1.7em/1.3 sans-serif;
     margin: 1em 0;
-    text-shadow: 0.3em 0.3em 1.5em #777;
+    text-shadow: .3em .3em 1.5em #777;
     text-align: center;
 }
 
 tr, td, th
 {
-    border: 0.1em #fff solid;
+    border: .1em #fff solid;
     text-align: center;
-    padding: 0 0.3em;
+    padding: 0 .3em;
 }
 
 tr
 {
-    font: 0.8625em/1.1 bold;
+    font: .8625em/1.1 sans-serif;
 }
 
 th
 {
-    font:0.7625em/1.1 bold;
+    font: bold .7625em/1.1 sans-serif;
+    letter-spacing: .1em;
     background: #404853;
     background: linear-gradient(#687587, #404853);
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, .2);
+    border-right: 1px solid rgba(255, 255, 255, .1);
     color: #fff;
-    padding: 0.5em 0.2em;
-    letter-spacing: 0.1em;
+    padding: .5em .2em;
 }
 
 /*Вариант № 1 самый простой выбираем четные/нечетные строки */
@@ -55,17 +55,14 @@ tr:nth-child(even)
     background: #c6c9cc;
 }
 
-col.alt
-{
-   background: green;
-}
 /*Вариант № 2. Просто вариант бессмысленный и беспощадный
-tr + tr, tr+tr+tr+tr
+tr + tr,
+tr + tr + tr + tr
 {
     background: #c6c9cc;
 }
 
-tr+tr+tr
+tr + tr + tr
 {
     background: #e8eae9;
 }
@@ -91,7 +88,7 @@ td:nth-child(odd)
 .caption
 {
     display: table-caption;
-    margin:5em 0 2em;
+    margin: 5em 0 2em;
 }
 
 .th_cell
@@ -103,7 +100,7 @@ td:nth-child(odd)
 .row
 {
     display: table-row;
-    font: 0.8625em/1.1 bold;
+    font: bold .8625em/1.1 sans-serif;
     vertical-align: middle;
 }
 
@@ -122,5 +119,5 @@ td:nth-child(odd)
 
 .cell:hover
 {
-    background: #FFFF66;
+    background: #FF6;
 }
