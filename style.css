@@ -13,7 +13,6 @@ img
 table
 {
     border-collapse: collapse;
-    border-spacing: 0;
     overflow: hidden;
     width: 100%;
 }
@@ -21,24 +20,15 @@ table
 th,
 td
 {
-    padding: 5px 14px;
-    text-align: left;
     border: 1px solid #bbb;
+    padding: 5px 14px;
+    position: relative;
+    text-align: left;
 }
 
 th
 {
-    background: #eee;
     border-bottom: 5px solid #bbb;
-}
-
-tr:nth-child(odd)
-{
-    background: #f1f1f1;
-}
-
-td:nth-child(odd)
-{
     background: #f1f1f1;
 }
 
@@ -47,19 +37,28 @@ tr:hover td
     background: #ffb;
 }
 
-td, th
+tr:nth-child(odd)::after,
+td:nth-child(odd)::after,
+td:hover::before
 {
-    position: relative;
-}
-
-td:hover::after
-{
-    background-color: #ffb;
-    height: 5000px;
     left: 0;
     position: absolute;
-    top: -2500px;
     width: 100%;
-    content: ' ';
+    content: ' ';
+    z-index: -2;
+    background: #f1f1f1;
+    height: 35px;
+}
+
+td:nth-child(odd)::after,
+td:hover::before
+{
+    height: 10000px;
+    top: -5000px;
+}
+
+td:hover::before
+{
     z-index: -1;
+    background: #ffb;
 }
