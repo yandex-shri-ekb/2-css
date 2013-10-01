@@ -1,0 +1,106 @@
+﻿/*Пользуясь случаем, хочу передать привет маме!*/
+
+table
+{
+    border: 4px dotted #fcc;
+    font: 12px Verdana, Geneva, sans-serif;
+    color: #666;
+    overflow: hidden;
+    z-index: 1;
+}
+
+th
+{
+    background: #c9c !important; /*!im иначе значение цвета в .col1 перекроет цвет*/
+}
+
+td, th
+{
+    position: relative;
+    border: 1px groove #c9c;
+}
+
+tr:hover td
+{
+    background: #ddd;
+}
+
+td:hover::after
+{
+    background: #ddd !important;
+    content: "/u00a0";
+    height: 5000px;
+    left: 0;
+    position: absolute;
+    top: -2500px;
+    width: 100%;
+    z-index: -1;
+}
+
+.col1
+{
+    background: #9cc;
+}
+
+.logo
+{
+    height: 35px;
+    width: 120px;
+    box-shadow: inset 0 0 5px 5px #fff;
+}
+
+.company_logo1
+{
+    background: url(img/logo/1.jpg)  !important;  /*Ак Барс Авиа*/
+}
+
+.company_logo2
+{
+    background: url(img/logo/2.jpg)  !important;  /*Татарстан Авиакомпания*/
+}
+
+.company_logo3
+{
+    background: url(img/logo/3.jpg)  !important;  /*Трансаэро авиакомпания*/
+}
+
+.company_logo4
+{
+    background: url(img/logo/4.jpg)  !important;  /*Глобус*/
+}
+
+.company_logo5
+{
+    background: url(img/logo/5.jpg)  !important;  /*s7 - Сибирь*/
+}
+
+.company_logo6
+{
+    background: url(img/logo/6.jpg)  !important;  /*UAI - Ukraine International Airlines*/
+}
+
+.company_logo7
+{
+    background: url(img/logo/7.jpg)  !important;  /*TAP Portugal*/
+}
+
+.company_logo8
+{
+    background: url(img/logo/8.jpg)  !important;  /*Туркменховаеллары*/
+}
+
+.company_logo9
+{
+    background: url(img/logo/9.jpg)  !important;  /*Ural airlains*/
+}
+
+.company_logo10
+{
+    background: url(img/logo/10.jpg)  !important;  /*Oren Air*/
+}
+
+
+
+
+
+

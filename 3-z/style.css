@@ -1,0 +1,114 @@
+﻿/*Пользуясь случаем, хочу передать привет маме!*/
+
+body
+{
+	background: #f0f0f0 url(img/wood.jpg);
+    font: 12px Verdana, Geneva, sans-serif;
+}
+.head_logo
+{
+    margin: 10px 0 0 200px;
+}
+.time
+{
+    margin: 10px 0 0 400px;
+}
+
+.logo
+{
+    background: url(img/logo_air.png) no-repeat;
+    opacity: 0.7;
+}
+
+/*Таблица - расписание*/
+
+table
+{
+    border-collapse: collapse;
+    background:rgba(255, 255, 255, .5);
+    border-radius: 15px;
+    margin:50px auto;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.15),
+     0px 10px 20px rgba(0,0,0,.1),
+     0px 20px 20px rgba(0,0,0,.1),
+     0px 30px 20px rgba(0,0,0,.1);
+
+}
+
+thead tr th
+{
+    color:#fff;
+    text-shadow: 2px 2px 0px rgba(0,0,0,.5);
+    text-align:left;
+    padding:20px;
+    background: linear-gradient(rgba(138, 148, 163, 0.8), rgba(74, 85, 100, 0.8));
+}
+
+tr td
+{
+  color:rgba(95, 96, 98, .8);
+  font-size:13px;
+  text-align: center;
+  padding:20px 0;
+}
+
+td:nth-child(1)
+{
+    color: rgb(26, 61, 193);
+}
+
+tr:nth-child(odd)
+{
+  background:rgba(240, 243, 245, .4);
+}
+/*Подсветка выделенной строки*/
+col:nth-of-type(n),
+td:nth-of-type(n):before
+{
+   width: 12.5%;
+}
+
+td:before
+{
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   bottom: 0;
+   content: '';
+   display: block;
+}
+
+tr:hover, td:hover:before
+{
+    background: rgba(204, 204, 204, .7);
+    box-shadow: inset 2px 2px 30px 0 #808080;
+}
+
+/*Закругленные границы*/
+
+thead tr:first-child th:first-child
+{
+    border-top-left-radius: 15px;
+}
+
+thead tr:first-child th:last-child
+{
+    border-top-right-radius: 15px;
+}
+
+tr:last-child td:first-child
+{
+    border-bottom-left-radius: 15px;
+}
+
+tr:last-child td:last-child
+{
+    border-bottom-right-radius: 15px;
+}
+
+
+
+
+
+
