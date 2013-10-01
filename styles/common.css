@@ -13,21 +13,26 @@ body
 
 .control
 {
+    color: #999;
     padding: 20px 0 5px
 }
 
-.control > a
+.control_action
 {
     color: #428bca;
     text-decoration: none;
-    border-bottom: 1px dashed #428bca;
-    margin: 0 10px
+    border-bottom: 1px dashed #428bca
+}
+
+.control_action:hover
+{
+    color: #346ea0;
+    border-color: #346ea0
 }
 
 table
 {
     width: 100%;
-    border-spacing: 0;
     border-collapse: collapse;
     position: relative
 }
@@ -45,15 +50,12 @@ tbody td
     border-top: 1px solid #f5f5f5
 }
 
+/* Ширина ячеек будет равна максимальной ширине контента в столбце. */
+
 tbody td:first-child,
 tbody td:last-child
 {
     width: 1px
-}
-
-tbody td:first-child > div
-{
-    margin: 0
 }
 
 tbody td > div
@@ -66,6 +68,8 @@ tbody td > div
     color: #999;
     font-size: 11px
 }
+
+/* em для правильного масштабирования отступов и радиуса скругления при увеличении шрифта. */
 
 .state
 {

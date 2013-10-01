@@ -27,8 +27,6 @@ td:hover:after
     display: inherit
 }
 
-/* В Firefox < 24.0 оверлей работает некорректно. */
-
 td:hover + td:after
 {
     background: #fff;
