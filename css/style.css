@@ -97,9 +97,10 @@ tbody tr:nth-child(2n)
 
 /** Четвертый вариант реализации "Зебры":
 *   С помощью селекторов соседей
-*   tr + tr
-*   tr + tr + tr + tr
-*   tr + tr + tr + tr + tr
+*   tbody tr:first-child,
+*   tbody tr:first-child + tr + tr,
+*   tbody tr:first-child + tr + tr + tr + tr,
+*   tbody tr:first-child + tr + tr + tr + tr + tr + tr
 *   {
 *       background: #ffffcc;
 *       color: #f60;
