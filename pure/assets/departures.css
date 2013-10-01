@@ -1,4 +1,4 @@
-/* [BOARD] */
+/* [DEPARTURES] */
 
 .departures {
     overflow: hidden;
@@ -72,6 +72,7 @@
     background: rgba(255, 0, 0, .1);
 }
 
+
 /* [IE8: departures] */
 
 /* IE8 doesn`t support RGBA -> degradation to image via data:uri */
@@ -90,26 +91,67 @@
     background: url("content/backgrounds/departures-hover.png");
 }
 
-/* IE7 doesn`t support ::after pseudo element -> place it via one-off expression */
-.ie7 .departures-cell {
+/* IE7 and IE6 doesn`t support ::after pseudo element -> create it via one-off expression */
+.ie7 .departures-cell,
+.ie6 .departures-cell {
     zoom: expression(this.runtimeStyle.zoom = "1", this.appendChild(document.createElement("div")).className="departures-cell-after");
 }
 
-.ie7 .departures-cell-after {
-    zoom: expression(this.runtimeStyle.zoom = "1", this.appendChild(document.createElement("div")).className="departures-cell-after-i");
-
+.ie7 .departures-cell-after,
+.ie6 .departures-cell-after {
     position: relative;
     z-index: -1;
     height: 10000px;
     margin: 0 0 -10000px;
     top: -5000px;
     left: -15px;
+    text-align: left;
+
+    /* Create child elemenet to fix width bug */
+    zoom: expression(this.runtimeStyle.zoom = "1", this.appendChild(document.createElement("div")).className="departures-cell-after-i");
 }
 
-.ie7 .departures-cell-after-i {
+.ie7 .departures-cell-after-i,
+.ie6 .departures-cell-after-i {
    width: 100%;
-   height: 10000px;
+   height: 100%;
    padding: 0 15px;
+}
+
+.ie6 .departures-cell-after-i {
+    position: absolute;
+    height: 10000px;
+}
+
+/* [IE6: departures] */
+
+/* IE6 doesn`t support hover on div elements -> use mouse over|out events via one-off expression */
+.ie6 .departures-cell {
+    z-index: expression(this.runtimeStyle.zIndex = "1",
+        onmouseover = function() {this.className += " departures-cell-hover"},
+        onmouseout = function() {this.className = this.className.replace("departures-cell-hover", "")});
+}
+
+.ie6 .departures-row {
+    z-index: expression(this.runtimeStyle.zIndex = "1",
+        onmouseover = function() {this.className += ' departures-row-hover'},
+        onmouseout = function() {this.className = this.className.replace("departures-row-hover", "")});
+}
+
+.ie6 .departures-row-hover,
+.ie6 .departures-cell-hover .departures-cell-after-i {
+    background: url("content/backgrounds/departures-hover.png"); /* could be used AlphaImageLoader instead to fix PNG24 */
+}
+
+/* IE6 doesn`t support overflow hidden without hasLayout -> set "hasLayout = true" with height */
+.ie6 .departures {
+    height: 1%;
+}
+
+/* IE6 doesn`t support abbr tag -> use depricated acronym */
+acronym {
+    border-bottom: 1px dotted;
+    cursor: pointer;
 }
 
 
