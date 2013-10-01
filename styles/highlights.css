@@ -10,7 +10,8 @@ table:target tbody tr:hover
     background: rgba(0, 0, 0, .07)
 }
 
-td:after
+td:hover:after,
+td:hover + td:after
 {
     width: 100%;
     position: absolute;
@@ -18,17 +19,10 @@ td:after
     bottom: 0;
     background: rgba(0, 0, 0, .07);
     content: '';
-    z-index: -1;
-    display: none
-}
-
-td:hover:after
-{
-    display: inherit
+    z-index: -1
 }
 
 td:hover + td:after
 {
-    background: #fff;
-    display: inherit
+    background: #fff
 }
