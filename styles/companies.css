@@ -1,0 +1,104 @@
+.company
+{
+    position: relative;
+    margin: 0
+}
+
+.company_name
+{
+    position: absolute;
+    margin-top: -45px;
+    overflow: hidden;
+    max-height: 45px;
+    color: #999;
+    font-size: 11px;
+    z-index: -1
+}
+
+.company_logo
+{
+    background: url("../images/logos.png") no-repeat;
+    height: 45px;
+    width: 126px;
+    display: inline-block
+}
+
+.company_logo-s7
+{
+    background-position: 0 0
+}
+
+.company_logo-austrian
+{
+    background-position: 0 -45px
+}
+
+.company_logo-british
+{
+    background-position: 0 -90px
+}
+
+.company_logo-iberia
+{
+    background-position: 0 -135px
+}
+
+.company_logo-lufthansa
+{
+    background-position: 0 -180px
+}
+
+.company_logo-transaero
+{
+    background-position: 0 -225px
+}
+
+.company_logo-rusline
+{
+    background-position: 0 -270px
+}
+
+.company_logo-uralairlines
+{
+    background-position: 0 -315px
+}
+
+tr:hover .company_logo-s7
+{
+    background-position: -126px 0
+}
+
+tr:hover .company_logo-austrian
+{
+    background-position: -126px -45px
+}
+
+tr:hover .company_logo-british
+{
+    background-position: -126px -90px
+}
+
+tr:hover .company_logo-iberia
+{
+    background-position: -126px -135px
+}
+
+tr:hover .company_logo-lufthansa
+{
+    background-position: -126px -180px
+}
+
+tr:hover .company_logo-transaero
+{
+    background-position: -126px -225px
+}
+
+tr:hover .company_logo-rusline
+{
+    background-position: -126px -270px
+}
+
+tr:hover .company_logo-uralairlines
+{
+    background-position: -126px -315px
+}

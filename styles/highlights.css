@@ -1,0 +1,28 @@
+table:target td:nth-child(2n),
+table:target tr:nth-child(2n)
+{
+    background: rgba(0, 0, 0, .05)
+}
+
+tbody tr:hover,
+table:target tbody tr:hover
+{
+    background: rgba(0, 0, 0, .07)
+}
+
+td:hover:after,
+td:hover + td:after
+{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .07);
+    content: '';
+    z-index: -1
+}
+
+td:hover + td:after
+{
+    background: #fff
+}
