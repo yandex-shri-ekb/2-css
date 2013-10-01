@@ -41,7 +41,7 @@ thead tr th
 
 tbody tr td
 {
-  color:rgba(95, 96, 98, 1.0);
+  color:rgba(95, 96, 98, .8);
   font-size:13px;
   padding:20px 20px 20px 20px;
 }
@@ -53,17 +53,44 @@ tbody tr:nth-child(odd)
 /*Подсветка выделенной строки*/
 tr:hover td
 {
-    background: rgba(204, 204, 204, 0.3);
+    background: rgba(204, 204, 204, .3);
 }
 
-td:hover::before
+col:nth-of-type(1),
+td:nth-of-type(1):before,
+col:nth-of-type(2),
+td:nth-of-type(2):before,
+col:nth-of-type(3),
+td:nth-of-type(3):before,
+col:nth-of-type(4),
+td:nth-of-type(4):before,
+col:nth-of-type(5),
+td:nth-of-type(5):before,
+col:nth-of-type(6),
+td:nth-of-type(6):before,
+col:nth-of-type(7),
+td:nth-of-type(7):before,
+col:nth-of-type(8),
+td:nth-of-type(8):before
 {
-     background: red !important;
+   width: 12.5%
 }
-/* td:hover:nth-child(n+2):nth-child(-n+2)
+
+td:before
 {
-    background: red;
-} */
+   position: absolute;
+   z-index: -1;
+   width: 100%;
+   top: 0;
+   bottom: 0;
+   content: '';
+   display: block;
+}
+
+tr:hover, td:hover:before
+{
+   background: rgba(255, 0, 0, 0);
+}
 
 /*Закругленные границы*/
 
