@@ -1,0 +1,63 @@
+body
+{
+   margin: 30px;
+   color: #333;
+   font: 14px Arial, Helvetica, sans-serif
+}
+
+table
+{
+   position: relative;
+   border-collapse: collapse;
+   outline: 1px solid #ddd
+}
+
+td, th
+{
+   padding: 0;
+   vertical-align: middle;
+   text-align: center
+}
+
+img
+{
+   width: 139px
+}
+
+th
+{
+   height: 30px;
+   background: #d0d0ff
+}
+
+td:nth-last-child(odd)
+{
+   background: rgba(169, 188, 241, .2)
+}
+
+tr:nth-last-child(odd)
+{
+   background: rgba(164, 182, 235, .2)
+}
+
+col:nth-of-type(n),
+td:nth-of-type(n):before
+{
+   width: 12.5%
+}
+
+td:before
+{
+   position: absolute;
+   z-index: -1;
+   width: 100%;
+   top: 0;
+   bottom: 0;
+   content: '';
+   display: block;
+}
+
+tr:hover, td:hover:before
+{
+   background: rgba(164, 182, 235, .5)
+}
