@@ -1,0 +1,6 @@
+/* all browsers */
+
+.flights.striped tr.odd
+{
+	background: #f9f9f9;
+}
