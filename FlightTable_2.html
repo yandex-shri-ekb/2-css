@@ -3,11 +3,25 @@
 <head>
 	<title>Flight table</title>
 	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=7" />
+	<!--[if lt IE 8]>
+		<link rel="stylesheet" href="cross-striped_ie.css" />
+	<![endif]-->
 	<link rel="stylesheet" href="main.css" />
-	<link rel="stylesheet" href="row-striped_2.css" />
+	<link rel="stylesheet" href="cross-striped_1.css" />
 </head>
 <body>
 	<table class="flights striped">
+		<colgroup>
+			<col></col>
+			<col></col>
+			<col></col>
+			<col></col>
+			<col></col>
+			<col></col>
+			<col></col>
+			<col></col>
+		</colgroup>
 		<thead>
 			<tr>
 				<th>Название авиакомпании</th>
@@ -21,7 +35,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class="odd">
+			<tr>
 				<td>Кипрские авиалинии</td>
 				<td><img src="http://svo.aero/r/A0A85D22-3134-4DD6-BED4-B894BBF76D1E/cyprusairways.png" /></td>
 				<td>1774</td>
@@ -41,7 +55,7 @@
 				<td>00:15, 1 октября 2013</td>
 				<td>Совершил посадку</td>
 			</tr>
-			<tr class="odd">
+			<tr>
 				<td>Болгария Эйр</td>
 				<td><img src="http://svo.aero/r/26CA7333-6F81-4623-8F87-190CDAA34553/bulgaria_air.png" /></td>
 				<td>622</td>
@@ -61,7 +75,7 @@
 				<td>00:45, 1 октября 2013</td>
 				<td>Летит</td>
 			</tr>
-			<tr class="odd">
+			<tr>
 				<td>КЛМ Королевские Голландские Авиалинии</td>
 				<td><img src="http://svo.aero/r/9AD7B5AC-FD74-44D2-AA21-DF28E057E93B/KLM_full.jpg" /></td>
 				<td>3188</td>

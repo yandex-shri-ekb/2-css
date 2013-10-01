@@ -1,0 +1,14 @@
+/* modern browsers without classes*/
+
+.flights.striped tbody tr:nth-child(2n+1)
+{
+	background: #f9f9f9;
+}
+.flights.striped tbody tr:nth-child(2n+1) td:nth-child(2n+1)
+{
+	background: #f1f1f1;
+}
+.flights.striped col:nth-child(2n+1)
+{
+	background: #f9f9f9;
+}
