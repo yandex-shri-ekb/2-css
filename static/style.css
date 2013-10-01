@@ -1,0 +1,86 @@
+body
+{
+    padding: 0 2em;
+    background: #faffff;
+    font: Arial, sans-serif;
+}
+
+header
+{
+    width: 100%;
+    padding: 0 0 0.3em;
+    margin: 0 auto 2em;
+    display: inline-block;
+    border-bottom: .2em solid #000;
+}
+
+header > h1 {
+    float: right;
+    font-size: 2em;
+    margin: 1.3em 1.5em 0 auto;
+}
+
+#yandex_logo
+{
+    float: left;
+    text-align: center;
+    margin: .7em 2em;
+    font: bold 100%/0.82em Arial,sans-serif; /* У вас как-то так */
+}
+
+#yandex_logo_img
+{
+    padding: 0 0 .47em;
+}
+
+table
+{
+    width: 100%;
+    overflow: hidden;
+    min-width: 600px;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0 .5em;
+}
+
+thead
+{
+    background: rgb(198, 232, 202);
+}
+
+tbody
+{
+    background: rgba(246, 229, 255, .6);
+}
+
+tr:nth-child(2n)
+{
+    background: rgba(219, 214, 255, .5);
+}
+
+td:nth-child(2n)
+{
+    background: rgba(255, 255, 255, .3);
+}
+
+td:hover,
+tr:hover
+{
+    background: rgba(0, 200, 200, .2);
+}
+
+td > div {
+    position: relative;
+}
+
+td:hover div::after
+{ 
+    z-index: -1;
+    background: rgba(0, 200, 200, .3);
+    position: absolute;
+    height: 100000%;
+    content: "";
+    top: -10000%;
+    width: 100%;
+    left: 0;
+}
