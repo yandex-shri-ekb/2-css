@@ -1,0 +1,94 @@
+﻿/*Пользуясь случаем, хочу передать привет маме!*/
+
+body
+{
+	background: #f0f0f0 url(img/wood.jpg);
+    font: 12px Verdana, Geneva, sans-serif;
+}
+.head_logo
+{
+    margin: 10px 0 0 200px;
+}
+.time
+{
+    margin: 10px 0 0 400px;
+}
+
+/*Таблица - расписание*/
+
+table
+{
+    border-collapse: separate;
+    background:rgb(255, 255, 255);
+    border-radius: 15px;
+    margin:50px auto;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.15),
+     0px 10px 20px rgba(0,0,0,.1),
+     0px 20px 20px rgba(0,0,0,.1),
+     0px 30px 20px rgba(0,0,0,.1);
+
+}
+
+thead tr th
+{
+    color:#fff;
+    text-shadow: 2px 2px 0px rgba(0,0,0,.5);
+    text-align:left;
+    padding:20px;
+    background: linear-gradient(rgb(138, 148, 163), rgb(74, 85, 100));
+}
+
+tbody tr td
+{
+  color:rgba(95, 96, 98, 1.0);
+  font-size:13px;
+  padding:20px 20px 20px 20px;
+}
+
+tbody tr:nth-child(odd)
+{
+  background:rgba(240, 243, 245, .4);
+}
+/*Подсветка выделенной строки*/
+tr:hover td
+{
+    background: rgba(204, 204, 204, 0.3);
+}
+
+td:hover::before
+{
+     background: red !important;
+}
+/* td:hover:nth-child(n+2):nth-child(-n+2)
+{
+    background: red;
+} */
+
+/*Закругленные границы*/
+
+thead tr:first-child th:first-child
+{
+    border-top-left-radius: 15px;
+}
+
+thead tr:first-child th:last-child
+{
+    border-top-right-radius: 15px;
+}
+
+tr:last-child td:first-child
+{
+    border-bottom-left-radius: 15px;
+}
+
+tr:last-child td:last-child
+{
+    border-bottom-right-radius: 15px;
+}
+
+
+
+
+
+
