@@ -95,6 +95,14 @@ td:nth-child(odd)
 {
     display: table-cell;
     text-align: center;
+    font: bold .7625em/1.1 sans-serif;
+    letter-spacing: .1em;
+    background: #404853;
+    background: linear-gradient(#687587, #404853);
+    border-left: 1px solid rgba(0, 0, 0, .2);
+    border-right: 1px solid rgba(255, 255, 255, .1);
+    color: #fff;
+    padding: .5em .2em;
 }
 
 .row
