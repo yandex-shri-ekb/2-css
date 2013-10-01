@@ -1,0 +1,139 @@
+body
+{
+    font: 13px/1.4 Arial, Helvetica, sans-serif;
+    padding: 20px 50px;
+}
+
+table
+{
+    color: #666;
+    background: rgba(234, 235, 236, 0.3);
+    border: #ccc 1px solid;
+    border-radius: 3px;
+    border-collapse: collapse;
+    box-shadow: 0 1px 2px #d1d1d1;
+    width: 100%;
+    margin: 0 0 35px;
+    text-align: center;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+table th
+{
+    padding: 20px;
+    border-top: 1px solid #fafafa;
+    border-bottom: 1px solid #e0e0e0;
+    background: #ededed;
+    background: linear-gradient(to top, #ededed, #ebebeb);
+}
+
+table td
+{
+    vertical-align: middle;
+    padding: 0;
+}
+
+table td > div
+{
+    padding: 5px 10px;
+}
+
+table td img
+{
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Задание 1 */
+
+/* Вариант 1 - Псевдокласс :nth-child */
+.table1 tbody tr:nth-child(odd)
+{
+    background: rgba(245, 245, 245, 0.75);
+}
+
+/* Вариант 2 - Использование классов even, odd... */
+.table1 tbody tr.odd
+{
+}
+
+/* Вариант 3 - Через селектор соседей. Выглядит не очень */
+.table1 tbody tr:first-child,
+.table1 tbody tr:first-child + tr + tr,
+.table1 tbody tr:first-child + tr + tr + tr + tr,
+.table1 tbody tr:first-child + tr + tr + tr + tr + tr + tr
+{
+}
+
+/* Задание 2 */
+
+/* строка */
+.table2 tbody tr:nth-child(odd)
+{
+    background: rgba(245, 245, 245, 0.75);
+}
+
+/* столбец */
+.table2 tbody tr td:nth-child(odd)
+{
+    background: rgba(217, 222, 228, 0.3);
+}
+
+/* пересечение */
+.table2 tbody tr:nth-child(odd) td:nth-child(odd)
+{
+}
+
+/* Задание 3 */
+
+.table3
+{
+    overflow: hidden;
+    z-index: 1;
+}
+
+.table3 td > div
+{
+    position: relative;
+}
+
+.table3 tbody tr:hover td
+{
+    background: rgba(217, 222, 228, 0.75);
+}
+
+.table3 tbody td:hover > div::before
+{
+    position: absolute;
+    top: -2500px;
+    z-index: -1;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 5000px;
+    content: '';
+    background: rgba(217, 222, 228, 0.75);
+}
+
+.pseudo-link
+{
+    border-bottom: 1px dotted;
+    color: #0d44a0;
+    cursor: pointer;
+}
+
+.pseudo-link.active
+{
+    color: #f00;
+}
+
+.pseudo-link:hover
+{
+    color: #f00;
+}
+
+.style-switcher
+{
+    margin: 0 0 20px;
+}
