@@ -24,7 +24,7 @@
 
 /* Row and column interlaced coloring */
 .departures-row:nth-child(odd),
-.departures-cell:nth-child(odd) {
+.departures-col:nth-child(odd):after {
     background: rgba(0, 0, 0, .05);
 }
 
@@ -34,7 +34,8 @@
     2. Not required any excess elements inside <td>
     3. Not required width definition for <td>
 */
-.departures-cell:after {
+.departures-cell:after,
+.departures-col:nth-child(odd):after {
     display: block;
     content: '';
 
