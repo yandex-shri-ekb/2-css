@@ -73,7 +73,7 @@ function onmouseoutHandler(colIndex, tableIndex, event) {
 
     if (cellsInCol) {
         for (var q = 0; q < cellsInCol.length; q++) {
-            cellsInCol[q].removeClass('b-board-row-hover');
+            cellsInCol[q].removeClass(classFillTd);
         }
     }
 }
@@ -85,10 +85,9 @@ HTMLElement.prototype.addClass = function (add) {
 
 HTMLElement.prototype.removeClass = function (remove) {
     var newClassNames = new Array(),
-        classes = this.className.split(' '),
-        i;
-    console.log(1);
-    for (i = 0; i < classes.length; i++) {
+        classes = this.className.split(' ');
+
+    for (var i = 0; i < classes.length; i++) {
         if (classes[i] !== remove) {
             newClassNames.push(classes[i]);
         }
