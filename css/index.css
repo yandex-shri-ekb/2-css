@@ -1,0 +1,104 @@
+/* Базовые стили для всех таблиц */
+body
+{
+    font: 13px/1 sans-serif;
+    text-align: center;
+}
+
+/* Не использовать классы, ну что ж, попробуем ... */
+body > div
+{
+    display: inline-block; /* для выравнивания по центру */
+}
+
+/* при border-collapse у table не появляется border справа и внизу, поэтому ... */
+div > div
+{
+    border: 1px solid #3ebaff;
+    border-left: none;
+    overflow: hidden;
+}
+
+table
+{
+    border-collapse: collapse;
+    margin: 0 -1px -1px 0;
+}
+
+thead
+{
+    background: #3ebaff;
+    color: #fff;
+}
+
+tbody
+{
+    text-align: left;
+}
+
+td
+{
+    padding: 0;
+    border: 1px solid #3ebaff;
+}
+
+th
+{
+    padding: 10px 10px;
+    border: 1px solid #3ebaff;
+}
+
+td > div {
+    padding: 5px 10px;
+    position: relative;
+}
+
+td img
+{
+    width: 120px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+}
+
+/**
+  * Индивидуальные стили для каждой из таблиц
+  */
+#table1 tr:nth-child(2n)
+{
+    background: rgba(60, 185, 255, .1);
+}
+
+#table2 tr:nth-child(2n)
+{
+    background: rgba(60, 185, 255, .2);
+}
+
+#table2 td:nth-child(2n)
+{
+    background: rgba(60, 185, 255, .1);
+}
+
+#table3 tbody tr:hover
+{
+    background: rgba(60, 185, 255, .2);
+}
+
+/* Специально не объединено с table2, чтобы была видна логика каждой таблицы */
+#table3 td:hover
+{
+    background: rgba(60, 185, 255, .5);
+}
+
+#table3 td:hover div:after
+{
+    position: absolute;
+    top: -1000px;
+    left: 0;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 2000px;
+    background: rgba(60, 185, 255, .2);
+}
+/** P.S: ссылки на изображения можно было бы указать внутри классов, но т.к. классы не используем ... */
