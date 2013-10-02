@@ -1,6 +1,6 @@
 body
 {
-	min-width: 925px;
+	min-width: 950px;
 }
 
 h1
@@ -16,10 +16,11 @@ h1:first-letter
 
 img
 {
-	height: 40px;
+	height: 35px;
 }
 
-table
+table,
+p
 {
 	margin: 0 auto;
 	padding: 20px 0;
@@ -44,5 +45,6 @@ th
 td
 {
 	text-align: center;
-	padding: 10px 7px;
+	padding: 10px 0px;
+	width: 12.5%;
 }

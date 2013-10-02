@@ -1,24 +1,24 @@
 /* Раскрашиваем строки через одну */
 
-tr:nth-child(even)
+.table1 tr:nth-child(even)
 {
 	background: rgba(127, 212, 255, .2);
 }
 
 /* Можно еще вот так:
 
-tr:nth-of-type(even)
+#table1 tr:nth-of-type(even)
 {
 	background: rgba(127, 212, 255, .2);
 }
 
-tr:nth-child(2n)
+#table1 tr:nth-child(2n)
 {
 	background: rgba(127, 212, 255, .2);
 }
 */
 
-td:nth-child(even)
+.table1 td:nth-child(even)
 {
 	background: rgba(170, 127, 255, .2);
 }
