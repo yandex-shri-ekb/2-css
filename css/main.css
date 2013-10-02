@@ -1,0 +1,174 @@
+/* base */
+body
+{
+    background-color: #515151;
+    font: 14px/1.4 "Tahoma", sans-serif;
+    color: #000;
+    margin: 0;
+}
+
+.i-center
+{
+    text-align: center;
+}
+
+.l-wrapper
+{
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1, h2
+{
+    font: 28px/1 "Trebuchet MS", Helvetica, sans-serif;
+    color: #cecece;
+    text-shadow: 1px 1px 1px #000;
+}
+
+h1
+{
+    text-align: center;
+    margin: 0;
+}
+
+.b-board
+{
+    display: inline-block;
+    min-width: 500px;
+    margin: 20px 0 0;
+}
+
+.b-board > h2
+{
+    font-size: 22px;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.b-board > table
+{
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.b-board > table th
+{
+    font: 13px/2.3 Verdana, sans-serif;
+    background-color: #999;
+    color: #000;
+    text-align: center;
+    padding: 0 15px;
+    white-space: nowrap;
+    border: 1px solid #999;
+}
+
+.b-board > table td
+{
+    font: 12px/26px "Verdana", sans-serif;
+    background-color: #222;
+    color: #fff;
+    padding: 2px 10px;
+    text-shadow: 1px 1px 1px #000;
+    white-space: nowrap;
+    border: 1px solid #222;
+}
+
+.b-board > table td > img
+{
+    vertical-align: middle;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.b-board > table .b-board-row-cancel > td
+{
+    color: #989898;
+}
+
+.b-board-col-time
+{
+    border-radius: 2px 0 0 2px;
+}
+
+.b-board-col-company
+{
+    width: 100px;
+}
+
+.b-board-col-company > img
+{
+    max-width: 100px;
+    max-height: 26px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.b-board-col-status
+{
+    border-radius: 0 2px 2px 0;
+}
+
+.b-board-row-date > div
+{
+    border-top: 1px solid #969696;
+    margin: 19px 0 0;
+    height: 15px;
+    text-align: center;
+}
+
+.b-board-row-date > div > time
+{
+    position: relative;
+    top: -15px;
+    padding: 0 6px;
+    background-color: #222;
+    color: #969696;
+}
+
+/* css3 solutions */
+.zebra > tbody tr:nth-child(odd) td,
+.zebra > tbody tr > td:nth-child(even)
+{
+    background-color: #2f2f2f;
+    border: 1px solid #2f2f2f;
+}
+
+.zebra > tbody tr:nth-child(odd) > td:nth-child(even)
+{
+    background-color: #3c3c3c;
+    border: 1px solid #3c3c3c;
+}
+
+/* hightlight */
+/* самого смущает потребность перебивать предыдущую
+специфичность для ячеек на пересечении креста, но important
+вставлять не хочется */
+.zebra > tbody tr:hover td,
+.zebra > tbody tr:nth-child(odd):hover td,
+.zebra > tbody tr td.b-board-row-hover,
+.zebra > tbody tr:nth-child(odd) td.b-board-row-hover
+{
+    background-color: #a3a2a2;
+    color: #000;
+    border: 1px solid #767676;
+    text-shadow: none;
+
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.zebra > tbody tr:hover td.b-board-row-hover
+{
+    background-color: #a1b4c5;
+}
+
+/* date row store background color  */
+.zebra > tbody tr td.b-board-row-date,
+.zebra > tbody tr:nth-child(odd) td.b-board-row-date
+{
+    background-color: #222;
+    border: 1px solid #222;
+}
