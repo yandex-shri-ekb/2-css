@@ -24,7 +24,7 @@
 
 /* [DEPARTURES: highlighting] */
 
-/* Row and column highlighting on hover (works on Firefox, Chrome, Opera and IE9+ without JS) */
+/* Row and column highlighting on hover (works on Firefox, Chrome, Opera and IE8+ without JS) */
 /* Special benefits of this solution:
     1. Works on Firefox, because doesn`t require relative on <td>
     2. Not required any excess elements inside <td>
@@ -108,10 +108,45 @@
 
 /* [DEPARTURES: ie8] */
 
+/* Rows (place it under highlighting) */
+.ie8 .departures-row.odd:after,
+.ie8 .departures-row.even:after {
+    display: block;
+    content: '';
+    position: relative;
+    z-index: -2;
+    width: 1000px;
+    height: 1000px;
+    margin: 0 0 -1000px -1000px;
+}
+
 /* IE8 doesn`t support RGBA -> degradation to image via data:uri */
 .ie8 .departures-row:hover,
 .ie8 .departures-cell:hover:after {
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpi+s/AIAUQYAAEJQEcEkoDEQAAAABJRU5ErkJggg==");
+}
+
+.ie8 .departures-row.odd:after {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiYGBg4AUIMAAAEgAO++PQbgAAAABJRU5ErkJggg==");
+}
+
+.ie8 .departures-row.even:after {
+    background: #fff;
+}
+
+/* Columns (place it under highlighting) */
+.departures-col.odd:after{
+    display: block;
+    content: '';
+    position: relative;
+    z-index: -1;
+    height: 10000px;
+    margin: 0 0 -10000px;
+    top: -5000px;
+    width: 100%;
+    padding: 0 15px;
+    left: -15px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiYGBg4AUIMAAAEgAO++PQbgAAAABJRU5ErkJggg=="); /* Column odd color */
 }
 
 /* [DEPARTURES: ie7] */
@@ -120,7 +155,7 @@
 .ie7 .departures-row:hover,
 .ie7 .departures-cell:hover:after,
 .ie7 .departures-cell:hover .departures-cell-after-i {
-    background: url("content/backgrounds/departures-hover.png");
+    background: url("content/backgrounds/departures-highlight.png");
 }
 
 /* IE7 and IE6 doesn`t support ::after pseudo element -> create it via one-off expression */
@@ -172,7 +207,7 @@
 
 .ie6 .departures-row-hover,
 .ie6 .departures-cell-hover .departures-cell-after-i {
-    background: url("content/backgrounds/departures-hover.png"); /* could be used AlphaImageLoader instead to fix PNG24 */
+    background: url("content/backgrounds/departures-highlight.png"); /* could be used AlphaImageLoader instead to fix PNG24 */
 }
 
 /* IE6 doesn`t support overflow hidden without hasLayout -> set "hasLayout = true" with height */
