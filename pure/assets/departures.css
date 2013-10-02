@@ -22,24 +22,19 @@
     background: #999;
 }
 
-/* Row and column interlaced coloring */
-.departures-row:nth-child(odd),
-.departures-col:nth-child(odd):after {
-    background: rgba(0, 0, 0, .05);
-}
+/* [DEPARTURES: highlighting] */
 
-/* Row and column highliting on hover (works on Firefox, Chrome, Opera and IE9+ without JS) */
+/* Row and column highlighting on hover (works on Firefox, Chrome, Opera and IE9+ without JS) */
 /* Special benefits of this solution:
     1. Works on Firefox, because doesn`t require relative on <td>
     2. Not required any excess elements inside <td>
     3. Not required width definition for <td>
 */
-.departures-cell:after,
-.departures-col:nth-child(odd):after {
+.departures-cell:after {
     display: block;
     content: '';
 
-    /* 1. Create highliting element after every cell */
+    /* 1. Create highlighting element after every cell */
     position: relative;
 
     /* 2. And place it under this cell */
@@ -70,20 +65,56 @@
 .departures-cell:hover /* Unnecessary, but fix small lag in IE9 */,
 .departures-row:hover,
 .departures-cell:hover:after {
-    background: rgba(255, 0, 0, .1);
+    background: rgba(255, 0, 0, .1); /* Highlighting color */
+}
+
+/* [DEPARTURES: interlaced coloring] */
+
+/* Columns (place it under highlighting) */
+.departures-col:nth-child(odd):after{
+    display: block;
+    content: '';
+    position: relative;
+    z-index: -1;
+    height: 10000px;
+    margin: 0 0 -10000px;
+    top: -5000px;
+    width: 100%;
+    padding: 0 15px;
+    left: -15px;
+    background: rgba(0, 0, 0, .05); /* Column odd color */
+}
+
+/* Rows (place it under highlighting) */
+.departures-row:nth-child(odd):after,
+.departures-row:nth-child(even):after {
+    display: block;
+    content: '';
+    position: relative;
+    z-index: -2;
+    width: 1000px;
+    height: 1000px;
+    margin: 0 0 -1000px -1000px;
+}
+
+.departures-row:nth-child(odd):after {
+    background: rgba(0, 0, 0, .05); /* Row odd color */
+}
+
+.departures-row:nth-child(even):after {
+    background: #fff; /* Row even color */
 }
 
 
-/* [IE8: departures] */
+/* [DEPARTURES: ie8] */
 
 /* IE8 doesn`t support RGBA -> degradation to image via data:uri */
 .ie8 .departures-row:hover,
-.ie8 .departures-cell:hover:after,
-.ie8 .departures-cell:hover .departures-cell-after {
+.ie8 .departures-cell:hover:after {
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpi+s/AIAUQYAAEJQEcEkoDEQAAAABJRU5ErkJggg==");
 }
 
-/* [IE7: departures] */
+/* [DEPARTURES: ie7] */
 
 /* IE7 doesn`t support RGBA and data:uri -> degradation to simple image */
 .ie7 .departures-row:hover,
@@ -124,7 +155,7 @@
     height: 10000px;
 }
 
-/* [IE6: departures] */
+/* [DEPARTURES: ie6] */
 
 /* IE6 doesn`t support hover on div elements -> use mouse over|out events via one-off expression */
 .ie6 .departures-cell {
@@ -156,7 +187,7 @@ acronym {
 }
 
 
-/* [PRINT: departures] */
+/* [DEPARTURES: print] */
 
 @media print {
 
