@@ -1,7 +1,7 @@
 /* Базовые стили для всех таблиц */
 body
 {
-    font: 13px/100% sans-serif;
+    font: 13px/1 sans-serif;
     text-align: center;
 }
 
@@ -36,20 +36,16 @@ tbody
     text-align: left;
 }
 
-th,
-td
-{
-    border: 1px solid #3ebaff;
-}
-
 td
 {
     padding: 0;
+	border: 1px solid #3ebaff;
 }
 
 th
 {
     padding: 10px 10px;
+	border: 1px solid #3ebaff;
 }
 
 td > div {
