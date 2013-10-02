@@ -153,16 +153,16 @@ h1
     border: 1px solid #767676;
     text-shadow: none;
 
-    -webkit-transition: all 0.1s ease-in;
-    -moz-transition: all 0.1s ease-in;
-    -o-transition: all 0.1s ease-in;
-    -ms-transition: all 0.1s ease-in;
-    transition: all 0.1s ease-in;
+    -webkit-transition: all 50ms ease;
+    -moz-transition: all 50ms ease;
+    -o-transition: all 50ms ease;
+    -ms-transition: all 50ms ease;
+    transition: all 50ms ease;
 }
 
 .zebra > tbody tr:hover td.b-board-row-hover
 {
-    background-color: #a1b4c5;
+    background-color: #969595;
 }
 
 /* date row store background color  */

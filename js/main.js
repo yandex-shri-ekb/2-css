@@ -60,8 +60,13 @@ function onmouseoutHandler(colIndex, tableIndex, event) {
     var cellsInCol = document.getElementsByClassName('js-tbl-' + tableIndex + '-col-' + colIndex),
         targetColIndex = parseInt(event.target.getAttribute('data-col')),
         targetTblIndex = parseInt(event.target.getAttribute('data-tbl')),
-        relatedTargetColIndex = parseInt(event.relatedTarget.getAttribute('data-col')),
+        relatedTargetColIndex,
+        relatedTargetTblIndex;
+
+    if (event.relatedTarget) {
+        relatedTargetColIndex = parseInt(event.relatedTarget.getAttribute('data-col'));
         relatedTargetTblIndex = parseInt(event.relatedTarget.getAttribute('data-tbl'));
+    }
 
     if (targetColIndex === relatedTargetColIndex && targetTblIndex == relatedTargetTblIndex)
         return;
