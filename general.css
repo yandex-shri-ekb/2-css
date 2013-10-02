@@ -1,0 +1,50 @@
+body
+{
+	min-width: 950px;
+}
+
+h1
+{
+	text-align: center;
+	font: normal 25px Arial Narrow, sans-serif;
+}
+
+h1:first-letter
+{
+	color: #f00;
+}	
+
+img
+{
+	height: 35px;
+}
+
+table,
+p
+{
+	margin: 0 auto;
+	padding: 20px 0;
+	width: 90%;
+	font: normal 14px Helvetica, sans-serif;
+}
+
+table,
+th,
+td
+{
+	border: 1px solid #d2d2d2;
+	border-collapse: collapse;
+}
+
+th
+{
+	padding: 10px 7px;
+	background: #e1e1e1;
+}
+
+td
+{
+	text-align: center;
+	padding: 10px 0px;
+	width: 12.5%;
+}
