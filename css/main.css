@@ -77,7 +77,10 @@ h1
 {
     vertical-align: middle;
     border-radius: 3px;
+    border: 1px solid #ccc;
     overflow: hidden;
+    max-width: 100px;
+    opacity: .5;
 }
 
 .b-board > table .b-board-row-cancel > td
@@ -93,14 +96,6 @@ h1
 .b-board-col-company
 {
     width: 100px;
-}
-
-.b-board-col-company > img
-{
-    max-width: 100px;
-    max-height: 26px;
-    border-radius: 3px;
-    overflow: hidden;
 }
 
 .b-board-col-status
@@ -163,6 +158,17 @@ h1
 .zebra > tbody tr:hover td.b-board-row-hover
 {
     background-color: #969595;
+}
+
+.zebra tr:hover img
+{
+    opacity: 1;
+
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    transition: all .5s ease-in;
 }
 
 /* date row store background color  */
