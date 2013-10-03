@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* [PRINT] */
 
 @media print {
@@ -14,7 +16,6 @@
         border-bottom: none;
     }
 
-    a[href^="javascript:"]:after,
     a[href^="#"]:after {
         content: "";
     }

@@ -1,6 +1,6 @@
 var App = {};
 
-(function(App){
+(function (App) {
     "use strict";
 
     /* IE8- doesn`t support Object.create -> create function with same behaviour */
@@ -14,4 +14,4 @@ var App = {};
         'inherit' : inherit
     };
 
-})(App);
+}(App));

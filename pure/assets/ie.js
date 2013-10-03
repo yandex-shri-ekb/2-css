@@ -1,11 +1,11 @@
-(function(Dom){
+(function (Dom) {
     "use strict";
 
-    var tableRows = (new Dom()).tag('tbody').tag('tr');
-    var tableCols = (new Dom()).tag('thead').tag('th');
+    var tableRows = (new Dom()).tag('tbody').tag('tr'),
+        tableCols = (new Dom()).tag('thead').tag('th');
 
     tableRows.odd().addClass('even');
     tableRows.even().addClass('odd');
     tableCols.even().addClass('odd');
 
-})(App.Dom);
+}(App.Dom));
