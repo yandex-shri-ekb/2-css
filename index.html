@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Табло вылета/прилета аэропорта Яндекс | 2-css | Кузвесов Артём</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!--[if lt IE 9]>
+            <script src="js/css3-mediaqueries.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <h1>Табло вылета/прилета аэропорта <span>Я</span>ндекс</h1>
+        <h2>Задание #<span>1</span></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Название авиакомпании</th>
+                    <th>Логотип авиакомпании</th>
+                    <th>Номер рейса</th>
+                    <th>Модель самолета</th>
+                    <th>Пункт назначения</th>
+                    <th>Плановое время вылета</th>
+                    <th>Фактическое время вылета</th>
+                    <th>Статус рейса</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ООО «Авиа-Сибирь»</td>
+                    <td><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></td>
+                    <td>7K 9811</td>
+                    <td>ТУ-144</td>
+                    <td>Москва</td>
+                    <td>29 сен 19:00</td>
+                    <td>29 сен 19:00</td>
+                    <td>В ожидании</td>
+                </tr>
+                <tr>
+                    <td>ООО «Авиакомпания «Северо-Запад»</td>
+                    <td><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></td>
+                    <td>7K 9812</td>
+                    <td>ТУ-154</td>
+                    <td>Санкт-Петербург</td>
+                    <td>29 сен 19:10</td>
+                    <td>29 сен 19:15</td>
+                    <td>В ожидании</td>
+                </tr>
+                <tr>
+                    <td>ООО «Авиалифт ДВ»</td>
+                    <td><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></td>
+                    <td>7K 9813</td>
+                    <td>АНТ-2</td>
+                    <td>Надым</td>
+                    <td>29 сен 19:20</td>
+                    <td>29 сен 19:20</td>
+                    <td>В ожидании</td>
+                </tr>
+                <tr>
+                    <td>ООО «Авиасервис»</td>
+                    <td><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></td>
+                    <td>7K 98113</td>
+                    <td>ТУ-124</td>
+                    <td>Тюмень</td>
+                    <td>29 сен 19:30</td>
+                    <td>29 сен 19:33</td>
+                    <td>В ожидании</td>
+                </tr>
+                <tr>
+                    <td>ООО «Авиа-Сибирь»</td>
+                    <td><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></td>
+                    <td>7K 9814</td>
+                    <td>ТУ-144</td>
+                    <td>Ростов-на-Дону</td>
+                    <td>29 сен 19:40</td>
+                    <td>29 сен 19:44</td>
+                    <td>В ожидании</td>
+                </tr>
+                <tr>
+                    <td>ООО «Авиакомпания «Северо-Запад»</td>
+                    <td><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></td>
+                    <td>7K 9815</td>
+                    <td>ТУ-154</td>
+                    <td>Новосибирск</td>
+                    <td>29 сен 19:50</td>
+                    <td>29 сен 19:50</td>
+                    <td>В ожидании</td>
+                </tr>
+                <tr>
+                    <td>ООО «Авиалифт ДВ»</td>
+                    <td><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></td>
+                    <td>7K 9816</td>
+                    <td>АНТ-2</td>
+                    <td>Урегной</td>
+                    <td>29 сен 20:00</td>
+                    <td>29 сен 20:00</td>
+                    <td>В ожидании</td>
+                </tr>
+                <tr>
+                    <td>ООО «Авиасервис»</td>
+                    <td><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></td>
+                    <td>7K 98117</td>
+                    <td>ТУ-124</td>
+                    <td>Киев</td>
+                    <td>29 сен 20:10</td>
+                    <td>29 сен 20:20</td>
+                    <td>В ожидании</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Задание #<span>2</span></h2>
+        <table id="cross">
+            <thead>
+                <tr>
+                    <th>Название авиакомпании</th>
+                    <th>Логотип авиакомпании</th>
+                    <th>Номер рейса</th>
+                    <th>Модель самолета</th>
+                    <th>Пункт назначения</th>
+                    <th>Плановое время вылета</th>
+                    <th>Фактическое время вылета</th>
+                    <th>Статус рейса</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ООО «Авиа-Сибирь»</td>
+                    <td><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></td>
+                    <td>7K 9811</td>
+                    <td>ТУ-144</td>
+                    <td>Москва</td>
+                    <td>29 сен 19:00</td>
+                    <td>29 сен 19:00</td>
+                    <td>В ожидании</td>
+                </tr>
+                <tr>
+                    <td>ООО «Авиакомпания «Северо-Запад»</td>
+                    <td><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></td>
+                    <td>7K 9812</td>
+                    <td>ТУ-154</td>
+                    <td>Санкт-Петербург</td>
+                    <td>29 сен 19:10</td>
+                    <td>29 сен 19:15</td>
+                    <td>В ожидании</td>
+                </tr>
+                <tr>
+                    <td>ООО «Авиалифт ДВ»</td>
+                    <td><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></td>
+                    <td>7K 9813</td>
+                    <td>АНТ-2</td>
+                    <td>Надым</td>
+                    <td>29 сен 19:20</td>
+                    <td>29 сен 19:20</td>
+                    <td>В ожидании</td>
+                </tr>
+                <tr>
+                    <td>ООО «Авиасервис»</td>
+                    <td><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></td>
+                    <td>7K 98113</td>
+                    <td>ТУ-124</td>
+                    <td>Тюмень</td>
+                    <td>29 сен 19:30</td>
+                    <td>29 сен 19:33</td>
+                    <td>В ожидании</td>
+                </tr>
+                <tr>
+                    <td>ООО «Авиа-Сибирь»</td>
+                    <td><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></td>
+                    <td>7K 9814</td>
+                    <td>ТУ-144</td>
+                    <td>Ростов-на-Дону</td>
+                    <td>29 сен 19:40</td>
+                    <td>29 сен 19:44</td>
+                    <td>В ожидании</td>
+                </tr>
+                <tr>
+                    <td>ООО «Авиакомпания «Северо-Запад»</td>
+                    <td><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></td>
+                    <td>7K 9815</td>
+                    <td>ТУ-154</td>
+                    <td>Новосибирск</td>
+                    <td>29 сен 19:50</td>
+                    <td>29 сен 19:50</td>
+                    <td>В ожидании</td>
+                </tr>
+                <tr>
+                    <td>ООО «Авиалифт ДВ»</td>
+                    <td><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></td>
+                    <td>7K 9816</td>
+                    <td>АНТ-2</td>
+                    <td>Урегной</td>
+                    <td>29 сен 20:00</td>
+                    <td>29 сен 20:00</td>
+                    <td>В ожидании</td>
+                </tr>
+                <tr>
+                    <td>ООО «Авиасервис»</td>
+                    <td><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></td>
+                    <td>7K 98117</td>
+                    <td>ТУ-124</td>
+                    <td>Киев</td>
+                    <td>29 сен 20:10</td>
+                    <td>29 сен 20:20</td>
+                    <td>В ожидании</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Задание #<span>3</span></h2>
+        <table id="crosshover">
+            <thead>
+                <tr>
+                    <th><div>Название авиакомпании</div></th>
+                    <th><div>Логотип авиакомпании</div></th>
+                    <th><div>Номер рейса</div></th>
+                    <th><div>Модель самолета</div></th>
+                    <th><div>Пункт назначения</div></th>
+                    <th><div>Плановое время вылета</div></th>
+                    <th><div>Фактическое время вылета</div></th>
+                    <th><div>Статус рейса</div></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><div>ООО «Авиа-Сибирь»</div></td>
+                    <td><div><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></div></td>
+                    <td><div>7K 9811</div></td>
+                    <td><div>ТУ-144</div></td>
+                    <td><div>Москва</div></td>
+                    <td><div>29 сен 19:00</div></td>
+                    <td><div>29 сен 19:00</div></td>
+                    <td><div>В ожидании</div></td>
+                </tr>
+                <tr>
+                    <td><div>ООО «Авиакомпания «Северо-Запад»</div></td>
+                    <td><div><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></div></td>
+                    <td><div>7K 9812</div></td>
+                    <td><div>ТУ-154</div></td>
+                    <td><div>Санкт-Петербург</div></td>
+                    <td><div>29 сен 19:10</div></td>
+                    <td><div>29 сен 19:15</div></td>
+                    <td><div>В ожидании</div></td>
+                </tr>
+                <tr>
+                    <td><div>ООО «Авиалифт ДВ»</div></td>
+                    <td><div><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></div></td>
+                    <td><div>7K 9813</div></td>
+                    <td><div>АНТ-2</div></td>
+                    <td><div>Надым</div></td>
+                    <td><div>29 сен 19:20</div></td>
+                    <td><div>29 сен 19:20</div></td>
+                    <td><div>В ожидании</div></td>
+                </tr>
+                <tr>
+                    <td><div>ООО «Авиасервис»</div></td>
+                    <td><div><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></div></td>
+                    <td><div>7K 98113</div></td>
+                    <td><div>ТУ-124</div></td>
+                    <td><div>Тюмень</div></td>
+                    <td><div>29 сен 19:30</div></td>
+                    <td><div>29 сен 19:33</div></td>
+                    <td><div>В ожидании</div></td>
+                </tr>
+                <tr>
+                    <td><div>ООО «Авиа-Сибирь»</div></td>
+                    <td><div><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></div></td>
+                    <td><div>7K 9814</div></td>
+                    <td><div>ТУ-144</div></td>
+                    <td><div>Ростов-на-Дону</div></td>
+                    <td><div>29 сен 19:40</div></td>
+                    <td><div>29 сен 19:44</div></td>
+                    <td><div>В ожидании</div></td>
+                </tr>
+                <tr>
+                    <td><div>ООО «Авиакомпания «Северо-Запад»</div></td>
+                    <td><div><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></div></td>
+                    <td><div>7K 9815</div></td>
+                    <td><div>ТУ-154</div></td>
+                    <td><div>Новосибирск</div></td>
+                    <td><div>29 сен 19:50</div></td>
+                    <td><div>29 сен 19:50</div></td>
+                    <td><div>В ожидании</div></td>
+                </tr>
+                <tr>
+                    <td><div>ООО «Авиалифт ДВ»</div></td>
+                    <td><div><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></div></td>
+                    <td><div>7K 9816</div></td>
+                    <td><div>АНТ-2</div></td>
+                    <td><div>Урегной</div></td>
+                    <td><div>29 сен 20:00</div></td>
+                    <td><div>29 сен 20:00</div></td>
+                    <td><div>В ожидании</div></td>
+                </tr>
+                <tr>
+                    <td><div>ООО «Авиасервис»</div></td>
+                    <td><div><img src="images/default_logo.png" alt="Логотип авиакомпании" width="24" height="23"></div></td>
+                    <td><div>7K 98117</div></td>
+                    <td><div>ТУ-124</div></td>
+                    <td><div>Киев</div></td>
+                    <td><div>29 сен 20:10</div></td>
+                    <td><div>29 сен 20:20</div></td>
+                    <td><div>В ожидании</div></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
