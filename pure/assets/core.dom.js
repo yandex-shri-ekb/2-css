@@ -1,8 +1,8 @@
-var Dom = (function(Core){
+(function(App, Core){
     "use strict";
 
-    function Dom (){
-        this.elements = [document];
+    function Dom (elements){
+        this.elements = elements instanceof Array ? elements : [document];
     }
 
     Dom.prototype = Core.inherit(Object.prototype);
@@ -15,10 +15,7 @@ var Dom = (function(Core){
                 elements.push(this.elements[i]);
             }
         }
-
-        this.elements = elements;
-
-        return this;
+        return new Dom(elements);
     };
 
     /* Filter even elements */
@@ -29,10 +26,7 @@ var Dom = (function(Core){
                 elements.push(this.elements[i]);
             }
         }
-
-        this.elements = elements;
-
-        return this;
+        return new Dom(elements);
     };
 
     /* Find dom elements by tag */
@@ -46,10 +40,7 @@ var Dom = (function(Core){
                 elements.push(childs[j]);
             }
         }
-
-        this.elements = elements;
-
-        return this;
+        return new Dom(elements);
     };
 
     /* Return elements */
@@ -71,6 +62,6 @@ var Dom = (function(Core){
         }
     };
 
-    return Dom;
+    App.Dom = Dom;
 
-})(Core);
+})(App, App.Core);

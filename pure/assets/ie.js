@@ -1,9 +1,11 @@
-(function(){
+(function(Dom){
     "use strict";
 
-    (new Dom()).tag('tbody').tag('tr').even().addClass('odd');
-    (new Dom()).tag('tbody').tag('tr').odd().addClass('even');
-    (new Dom()).tag('thead').tag('th').even().addClass('odd');
+    var tableRows = (new Dom()).tag('tbody').tag('tr');
+    var tableCols = (new Dom()).tag('thead').tag('th');
 
-})();
+    tableRows.odd().addClass('even');
+    tableRows.even().addClass('odd');
+    tableCols.even().addClass('odd');
 
+})(App.Dom);

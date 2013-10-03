@@ -1,4 +1,6 @@
-var Core = (function(){
+var App = {};
+
+(function(App){
     "use strict";
 
     /* IE8- doesn`t support Object.create -> create function with same behaviour */
@@ -8,8 +10,8 @@ var Core = (function(){
         return new Constructor();
     };
 
-    return {
+    App.Core = {
         'inherit' : inherit
     };
 
-})();
+})(App);
