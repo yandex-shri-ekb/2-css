@@ -1,0 +1,41 @@
+
+#task1 tr:nth-child(odd)
+{
+   background-color: red;
+}
+#task1 td:nth-child(even)
+{
+    background-color: red;
+}
+ /*3 task*/
+ table
+{
+    overflow: hidden;
+
+    border-collapse: collapse;
+}
+
+#task3 td:hover
+{
+    background-color: #d1d1c3;
+    position: relative;
+}
+#task3 tr:hover
+{
+    background-color:#d1c9ad;
+}
+#task3 td:hover::after
+{
+    position: absolute;
+    z-index: -1;
+    top: -5000px;
+    left: 0;
+
+    width: 100%;
+    height: 10000px;
+
+    content: '\00a0';
+
+    background-color: #d1c9ad;
+}
+
