@@ -19,12 +19,11 @@
 
 ## Решение
 
-Задание 1: only css (Firefox, Chrome, Opera, IE9+), css + js (IE8).
+Задание 1: css (Firefox, Chrome, Opera, IE9+), css + js (IE8).
 
-Задание 2: only css (Firefox, Chrome, Opera, IE9+), css + js (IE8).
+Задание 2: css (Firefox, Chrome, Opera, IE9+), css + js (IE8).
 
-Задание 3: only css (Firefox, Chrome, Opera, IE8+), css + expressions (IE6-7).
+Задание 3: css (Firefox, Chrome, Opera, IE8+), css + expressions (IE6, IE7).
 
 * [Исходный код](https://github.com/gogoleff/Yandex-IDS2013_2-css/tree/master/pure)
-* [Посмотреть страницу](http://gogoleff.github.io/Yandex-IDS2013_2-css/pure/)
 * [Посмотреть страницу](http://gogoleff.github.io/Yandex-IDS2013_2-css/pure/)
