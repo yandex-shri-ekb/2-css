@@ -25,5 +25,6 @@
 
 Задание 3: only css (Firefox, Chrome, Opera, IE8+), css + expressions (IE6-7).
 
-* [Исходный код](https://github.com/gogoleff/2-css/tree/master/pure)
-* [Посмотреть страницу](http://gogoleff.github.io/2-css/pure/)
+* [Исходный код](https://github.com/gogoleff/Yandex-IDS2013_2-css/tree/master/pure)
+* [Посмотреть страницу](http://gogoleff.github.io/Yandex-IDS2013_2-css/pure/)
+* [Посмотреть страницу](http://gogoleff.github.io/Yandex-IDS2013_2-css/pure/)

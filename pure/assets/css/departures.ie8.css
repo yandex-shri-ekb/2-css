@@ -1,0 +1,54 @@
+/* [highlighting] */
+
+/* IE8 doesn`t support RGBA -> degradation to image via data:uri */
+.departures-row:hover,
+.departures-cell:hover:after
+{
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpi+s/AIAUQYAAEJQEcEkoDEQAAAABJRU5ErkJggg==");
+}
+
+/* [interlaced coloring] */
+
+/* Rows (place it under highlighting) */
+.departures-row.odd:after,
+.departures-row.even:after
+{
+    content: '';
+
+    position: relative;
+    z-index: -2;
+
+    display: block;
+    width: 1000px;
+    height: 1000px;
+    margin: 0 0 -1000px -1000px;
+}
+
+.departures-row.odd:after
+{
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiYGBg4AUIMAAAEgAO++PQbgAAAABJRU5ErkJggg==");
+}
+
+.departures-row.even:after
+{
+    background: #fff;
+}
+
+/* Columns (place it under highlighting) */
+.departures-col.odd:after
+{
+    content: '';
+
+    position: relative;
+    z-index: -1;
+    top: -5000px;
+    left: -15px;
+
+    display: block;
+    width: 100%;
+    height: 10000px;
+    margin: 0 0 -10000px;
+    padding: 0 15px;
+
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiYGBg4AUIMAAAEgAO++PQbgAAAABJRU5ErkJggg=="); /* Column odd color */
+}

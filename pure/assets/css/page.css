@@ -1,28 +1,31 @@
-@charset "UTF-8";
-
-/* [PAGE] */
-
 .page {
-    background: #ccc;
     color: #000;
+    background: #ccc;
+
 }
 
-.page-width {
+.page-width
+{
     position: relative;
+
     width: 910px;
     margin: 0 auto;
     padding: 40px;
+
     background: #fff;
 }
 
-/* [PAGE: print] */
-@media print {
+/* [PRINT] */
+@media print
+{
 
-    @page {
+    @page
+    {
         margin: 40px;
     }
 
-    .page-width {
+    .page-width
+    {
         width: auto;
         padding: 0;
     }

@@ -1,23 +1,22 @@
-@charset "UTF-8";
-
-/* [PRINT] */
-
-@media print {
-
+@media print
+{
     a,
-    a:visited {
+    a:visited
+    {
         text-decoration: none;
     }
 
-    a[href]:after {
+    a[href]:after
+    {
         content: " (" attr(href) ")";
         color: #666;
         word-wrap: break-word;
+
         border-bottom: none;
     }
 
-    a[href^="#"]:after {
+    a[href^="#"]:after
+    {
         content: "";
     }
-
 }
