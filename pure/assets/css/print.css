@@ -9,9 +9,9 @@
     a[href]:after
     {
         content: " (" attr(href) ")";
-        color: #666;
         word-wrap: break-word;
 
+        color: #666;
         border-bottom: none;
     }
 

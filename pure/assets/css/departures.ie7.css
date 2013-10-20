@@ -10,6 +10,7 @@
 /* IE7 doesn`t support ::after pseudo element -> create it via one-off expression */
 .departures-cell
 {
+
     zoom: expression(
         this.runtimeStyle.zoom = "1",
         this.appendChild(document.createElement("div")).className="departures-cell-after"
@@ -18,12 +19,6 @@
 
 .departures-cell-after
 {
-    /* Create child elemenet to fix width bug */
-    zoom: expression(
-        this.runtimeStyle.zoom = "1",
-        this.appendChild(document.createElement("div")).className="departures-cell-after-i"
-    );
-
     position: relative;
     z-index: -1;
     top: -5000px;
@@ -33,6 +28,12 @@
     margin: 0 0 -10000px;
 
     text-align: left;
+
+    /* Create child elemenet to fix width bug */
+    zoom: expression(
+        this.runtimeStyle.zoom = "1",
+        this.appendChild(document.createElement("div")).className="departures-cell-after-i"
+    );
 }
 
 .departures-cell-after-i
