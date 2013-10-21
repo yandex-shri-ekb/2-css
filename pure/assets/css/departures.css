@@ -39,7 +39,6 @@
 */
 .departures-cell:after
 {
-
     /* 1. Create highlighting element after every cell */
     position: relative;
 
