@@ -1,0 +1,143 @@
+/* [Task] */
+
+.task-header
+{
+    overflow: hidden;
+
+    height: 50px;
+    margin: 0 0 40px;
+}
+
+.task-header-bg
+{
+    background: #efefef;
+}
+
+.task-h1,
+.task-back
+{
+    position: relative;
+
+    float: left;
+
+    height: 50px;
+    margin: 0;
+    padding: 0 40px;
+
+    background: #ffd966;
+
+    font: 400 20px/50px Arial, sans-serif;
+}
+
+.task-h1:after,
+.task-back:after
+{
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    content: '';
+
+    border: 25px transparent solid;
+    border-left-color:#ffd966;
+
+    /* antialiasing */
+    -webkit-transform: rotate(360deg);
+}
+
+.task-h1:first-letter
+{
+    color: red;
+}
+
+.task-header-item
+{
+    float: left;
+
+    margin: 0 0 0 40px;
+
+    color: #000;
+
+    font: 16px/50px Arial, sans-serif;
+}
+
+.task-back,
+.task-back:visited,
+.task-back:hover
+{
+    left: 15px;
+
+    text-decoration: none;
+
+    color: #000;
+    background: #efefef;
+}
+
+.task-back:after
+{
+    left: -40px;
+
+    border: 25px #fff solid;
+    border-right-color: #efefef;
+}
+
+.task-readme
+{
+    float: left;
+
+    margin: 0 0 0 50px;
+
+    color: #000;
+
+    font: 16px/50px Arial, sans-serif;
+}
+
+
+.task
+{
+    clear: both;
+
+    margin: 0 20px 30px;
+}
+
+.task-h2
+{
+    margin: 0 0 20px;
+
+    font: 400 16px/16px Arial, sans-serif;
+}
+
+.task-h3
+{
+    color: #009f50;
+
+    font: 400 12px/12px Arial, sans-serif;
+}
+
+.task-button,
+.task-button:visited,
+.task-button:hover
+{
+    display: inline-block;
+
+    margin: 0 20px 10px 0;
+    padding: 10px 20px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #000;
+    background: #eee;
+
+    font-size: 14px;
+}
+
+.task-button:hover
+{
+    background: #ccc;
+}
+
+.task-notice
+{
+    color: #888;
+}
