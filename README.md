@@ -11,7 +11,7 @@
 Задание 3: css (Firefox, Chrome, IE8+), css + expressions (IE6, IE7).
 
 * [Исходный код (css, html, js)](https://github.com/gogoleff/Yandex-IDS2013_2-css/tree/master/solution)
-* [Демонстрация](https://rawgithub.com/gogoleff/Yandex-IDS2013_1-introduction/master/solution/index.html)
+* [Демонстрация](https://rawgithub.com/gogoleff/Yandex-IDS2013_2-css/master/solution/index.html)
 
 ## Описание
 Вам необходимо сверстать табло вылета/прилета аэропорта Яндекс. В качестве примера исходных данных вы можете взять [табло аэропорта Домодедово](http://www.domodedovo.ru/ru/main/airindicator/flightnew/). Информация, которую необходимо разместить в табло следующая: название авиакомпании, логотип авиакомпании, номер рейса, модель самолёта, пункт назначения, плановое время вылета, фактическое время вылета, статус рейса. Оформление таблицы оставляем на ваш вкус, а дополнительным бонусом будет реализация без использования классов и JavaScript'а
