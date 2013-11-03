@@ -1,0 +1,34 @@
+.page
+{
+    color: #000;
+    background: #ccc;
+
+}
+
+.page-width
+{
+    position: relative;
+
+    width: 910px;
+    margin: 0 auto;
+    padding: 40px;
+
+    background: #fff;
+}
+
+/* [PRINT] */
+@media print
+{
+
+    @page
+    {
+        margin: 40px;
+    }
+
+    .page-width
+    {
+        width: auto;
+        padding: 0;
+    }
+
+}

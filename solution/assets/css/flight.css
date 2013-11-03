@@ -1,0 +1,27 @@
+.flight-logo
+{
+    text-align: center;
+}
+
+.flight-print-name
+{
+    display: none;
+}
+
+/* [PRINT] */
+
+@media print
+{
+    .flight-date,
+    .flight-print-name
+    {
+        display: block;
+    }
+
+    /* Hide logo and show text instead */
+    .flight-logo-image
+    {
+        display: none;
+    }
+}
+

@@ -1,0 +1,57 @@
+/* [HTML and BODY] */
+
+/* Prevent text size adjust after orientation change, without disabling user zoom in iOS and Windows Phone */
+html
+{
+
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Set default font */
+/* Remove default margin */
+body
+{
+    margin: 0;
+
+    font: 12px Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* [LINKS] */
+
+/* Remove the gray background color from active links in IE 10 */
+a
+{
+    background: transparent;
+}
+
+/* Address `outline` inconsistency between Chrome and other browsers */
+a:focus
+{
+    outline: thin dotted;
+}
+
+/* Improve readability when focused and also mouse hovered in all browsers */
+a:active,
+a:hover
+{
+    outline: 0;
+}
+
+/* [TYPOGRAPHY] */
+
+/* Address <abbr> styling not present in IE 8/9, Safari 5, and Chrome */
+abbr[title]
+{
+    cursor: pointer;
+
+    border-bottom: 1px dotted;
+}
+
+/* [TABLES] */
+
+/* Remove spacing between <table> cells */
+table
+{
+    border-collapse: collapse;
+}

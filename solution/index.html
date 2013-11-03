@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>2-css | Yandex.IDS.2013 | Gogolev Sergey</title>
+
+        <link href="assets/css/normalize.css" rel="stylesheet">
+        <link href="assets/css/task.css" rel="stylesheet">
+        <link href="assets/css/page.css" rel="stylesheet">
+        <link href="assets/css/departures.css" rel="stylesheet">
+        <!--[if IE 8]><link href="assets/css/departures.ie8.css" rel="stylesheet"><![endif]-->
+        <!--[if IE 7]><link href="assets/css/departures.ie7.css" rel="stylesheet"><![endif]-->
+        <!--[if IE 6]><link href="assets/css/departures.ie6.css" rel="stylesheet"><![endif]-->
+        <link href="assets/css/flight.css" rel="stylesheet">
+        <link href="assets/css/print.css" rel="stylesheet" media="print">
+
+    </head>
+    <body class="page">
+
+    <div class="task-header task-header-bg">
+        <h1 class="task-h1">Яндекс ШРИ 2013. 2-css</h1>
+        <a class="task-header-item" href="https://github.com/gogoleff/Yandex-IDS2013_2-css/tree/master" target="_blank">Readme</a>
+        <span class="task-header-item"><i>Firefox, Chrome, IE8+ (IE6+ with expressions)</i></span>
+    </div>
+
+        <div class="page-width">
+
+            <div class="departures">
+                <table class="departures-table">
+                    <thead>
+                        <tr>
+                            <th class="departures-head departures-col" rowspan="2">Авиалинии</th>
+                            <th class="departures-head departures-col" rowspan="2">Рейс</th>
+                            <th class="departures-head departures-col" rowspan="2">Тип
+                                <!--[if IE 6]><acronym title="Воздушное судно">ВС</acronym><![endif]-->
+                                <!--[if gt IE 6]><!--><abbr title="Воздушное судно">ВС</abbr><!--<![endif]-->
+                            </th>
+                            <th class="departures-head departures-col" rowspan="2">Направление</th>
+                            <th class="departures-head departures-col" colspan="2">Время вылета</th>
+                            <th class="departures-head departures-col" rowspan="2">Статус</th>
+                        </tr>
+                        <tr>
+                            <th class="departures-head">Плановое</th>
+                            <th class="departures-head">Фактическое</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="departures-row">
+                            <td class="departures-cell flight-logo">
+                                <img class="flight-logo-image" src="assets/content/airlines/hawaii.png" alt="Hawaii Airlines">
+                                <span class="flight-print-name">Hawaii Airlines</span>
+                            </td>
+                            <td class="departures-cell">HW7824</td>
+                            <td class="departures-cell">A320</td>
+                            <td class="departures-cell">Honolulu</td>
+                            <td class="departures-cell"><span class="flight-date">01 окт</span> 12:00</td>
+                            <td class="departures-cell"><span class="flight-date">01 окт</span> 14:00</td>
+                            <td class="departures-cell">Отправлен</td>
+                        </tr>
+                        <tr class="departures-row">
+                            <td class="departures-cell flight-logo">
+                                <img class="flight-logo-image" src="assets/content/airlines/san-andreas.png" alt="San Andreas Airlines">
+                                <span class="flight-print-name">San Andreas Airlines</span>
+                            </td>
+                            <td class="departures-cell">SA1284</td>
+                            <td class="departures-cell">A300</td>
+                            <td class="departures-cell">New York</td>
+                            <td class="departures-cell"><span class="flight-date">02 фев</span> 14:00</td>
+                            <td class="departures-cell"><span class="flight-date">02 фев</span> 14:30</td>
+                            <td class="departures-cell">Отправлен</td>
+                        </tr>
+                        <tr class="departures-row">
+                            <td class="departures-cell flight-logo">
+                                <img class="flight-logo-image" src="assets/content/airlines/southwest.png" alt="Southwest Airlines">
+                                <span class="flight-print-name">Southwest Airlines</span>
+                            </td>
+                            <td class="departures-cell">SW9785</td>
+                            <td class="departures-cell">A320</td>
+                            <td class="departures-cell">Dallas</td>
+                            <td class="departures-cell"><span class="flight-date">19 фев</span> 02:00</td>
+                            <td class="departures-cell"><span class="flight-date">19 фев</span> 10:00</td>
+                            <td class="departures-cell">Задерживается</td>
+                        </tr>
+                        <tr class="departures-row">
+                            <td class="departures-cell flight-logo">
+                                <img class="flight-logo-image" src="assets/content/airlines/hawaii.png" alt="Hawaii Airlines">
+                                <span class="flight-print-name">Hawaii Airlines</span>
+                            </td>
+                            <td class="departures-cell">HW7824</td>
+                            <td class="departures-cell">A320</td>
+                            <td class="departures-cell">Honolulu</td>
+                            <td class="departures-cell"><span class="flight-date">01 окт</span> 12:00</td>
+                            <td class="departures-cell"><span class="flight-date">01 окт</span> 14:00</td>
+                            <td class="departures-cell">Отправлен</td>
+                        </tr>
+                        <tr class="departures-row">
+                            <td class="departures-cell flight-logo">
+                                <img class="flight-logo-image" src="assets/content/airlines/san-andreas.png" alt="San Andreas Airlines">
+                                <span class="flight-print-name">San Andreas Airlines</span>
+                            </td>
+                            <td class="departures-cell">SA1284</td>
+                            <td class="departures-cell">A300</td>
+                            <td class="departures-cell">New York</td>
+                            <td class="departures-cell"><span class="flight-date">02 фев</span> 14:00</td>
+                            <td class="departures-cell"><span class="flight-date">02 фев</span> 14:30</td>
+                            <td class="departures-cell">Отправлен</td>
+                        </tr>
+                        <tr class="departures-row">
+                            <td class="departures-cell flight-logo">
+                                <img class="flight-logo-image" src="assets/content/airlines/southwest.png" alt="Southwest Airlines">
+                                <span class="flight-print-name">Southwest Airlines</span>
+                            </td>
+                            <td class="departures-cell">SW9785</td>
+                            <td class="departures-cell">A320</td>
+                            <td class="departures-cell">Dallas</td>
+                            <td class="departures-cell"><span class="flight-date">19 фев</span> 02:00</td>
+                            <td class="departures-cell"><span class="flight-date">19 фев</span> 10:00</td>
+                            <td class="departures-cell">Задерживается</td>
+                        </tr>
+                        <tr class="departures-row">
+                            <td class="departures-cell flight-logo">
+                                <img class="flight-logo-image" src="assets/content/airlines/hawaii.png" alt="Hawaii Airlines">
+                                <span class="flight-print-name">Hawaii Airlines</span>
+                            </td>
+                            <td class="departures-cell">HW7824</td>
+                            <td class="departures-cell">A320</td>
+                            <td class="departures-cell">Honolulu</td>
+                            <td class="departures-cell"><span class="flight-date">01 окт</span> 12:00</td>
+                            <td class="departures-cell"><span class="flight-date">01 окт</span> 14:00</td>
+                            <td class="departures-cell">Отправлен</td>
+                        </tr>
+                        <tr class="departures-row">
+                            <td class="departures-cell flight-logo">
+                                <img class="flight-logo-image" src="assets/content/airlines/san-andreas.png" alt="San Andreas Airlines">
+                                <span class="flight-print-name">San Andreas Airlines</span>
+                            </td>
+                            <td class="departures-cell">SA1284</td>
+                            <td class="departures-cell">A300</td>
+                            <td class="departures-cell">New York</td>
+                            <td class="departures-cell"><span class="flight-date">02 фев</span> 14:00</td>
+                            <td class="departures-cell"><span class="flight-date">02 фев</span> 14:30</td>
+                            <td class="departures-cell">Отправлен</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><!-- /departures -->
+        </div><!-- /page-width -->
+
+        <!--[if lt IE 9]>
+            <script src="assets/js/core.js"></script>
+            <script src="assets/js/core.dom.js"></script>
+            <script src="assets/js/ie.js"></script>
+        <!--<![endif]-->
+    </body>
+</html>

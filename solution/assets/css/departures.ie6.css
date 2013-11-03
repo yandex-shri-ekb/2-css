@@ -1,0 +1,75 @@
+/* IE6 doesn`t support abbr tag -> use depricated acronym */
+acronym
+{
+    cursor: pointer;
+
+    border-bottom: 1px dotted;
+}
+
+/* IE6 doesn`t support overflow hidden without hasLayout -> set "hasLayout = true" with height */
+.departures
+{
+    height: 1%;
+}
+
+/* [highlighting] */
+
+/* IE6 doesn`t support ::after pseudo element -> create it via one-off expression */
+.departures-cell
+{
+
+    zoom: expression(
+        this.runtimeStyle.zoom = "1",
+        this.appendChild(document.createElement("div")).className="departures-cell-after"
+    );
+
+    /* IE6 doesn`t support hover on div elements -> use mouse over|out events via one-off expression */
+    z-index: expression(
+        this.runtimeStyle.zIndex = "1",
+        onmouseover = function() {this.className += " departures-cell-hover";},
+        onmouseout = function() {this.className = this.className.replace("departures-cell-hover", "");}
+    );
+}
+
+.departures-row
+{
+    z-index: expression(
+        this.runtimeStyle.zIndex = "1",
+        onmouseover = function() {this.className += ' departures-row-hover';},
+        onmouseout = function() {this.className = this.className.replace("departures-row-hover", "");}
+    );
+}
+
+.departures-cell-after
+{
+    position: relative;
+    z-index: -1;
+    top: -5000px;
+    left: -15px;
+
+    height: 10000px;
+    margin: 0 0 -10000px;
+
+    text-align: left;
+
+    /* Create child elemenet to fix width bug */
+    zoom: expression(
+        this.runtimeStyle.zoom = "1",
+        this.appendChild(document.createElement("div")).className="departures-cell-after-i"
+    );
+}
+
+.departures-cell-after-i
+{
+    position: absolute;
+
+    width: 100%;
+    height: 10000px;
+    padding: 0 15px;
+}
+
+.departures-row-hover,
+.departures-cell-hover .departures-cell-after-i
+{
+    background: url("../theme/backgrounds/departures-highlight.png"); /* could be used AlphaImageLoader instead to fix PNG24 */
+}

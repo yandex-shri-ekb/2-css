@@ -1,0 +1,44 @@
+/* [highlighting] */
+
+/* IE7 doesn`t support RGBA and data:uri -> degradation to simple image */
+.departures-row:hover,
+.departures-cell:hover .departures-cell-after-i
+{
+    background: url("../theme/backgrounds/departures-highlight.png");
+}
+
+/* IE7 doesn`t support ::after pseudo element -> create it via one-off expression */
+.departures-cell
+{
+
+    zoom: expression(
+        this.runtimeStyle.zoom = "1",
+        this.appendChild(document.createElement("div")).className="departures-cell-after"
+    );
+}
+
+.departures-cell-after
+{
+    position: relative;
+    z-index: -1;
+    top: -5000px;
+    left: -15px;
+
+    height: 10000px;
+    margin: 0 0 -10000px;
+
+    text-align: left;
+
+    /* Create child elemenet to fix width bug */
+    zoom: expression(
+        this.runtimeStyle.zoom = "1",
+        this.appendChild(document.createElement("div")).className="departures-cell-after-i"
+    );
+}
+
+.departures-cell-after-i
+{
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+}
